@@ -8,7 +8,10 @@ const Hero = () => {
         <span className="col-span-12 col-start-4 col-end-10 text-center font-extralight text-5xl m-2">
           Hey! I am Vaishali
         </span>
+        <span className="col-span-12 col-start-4 col-end-10 text-center font-black text-7xl capitalize">
         Web Developer Based in Delhi
+
+        </span>
       </span>
 
       <span className="col-span-8 col-start-4 col-end-10 text-center text-sm m-2">
