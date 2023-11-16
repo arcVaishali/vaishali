@@ -11,7 +11,7 @@ const Services = () => {
   ];
   return (
     <div className="grid grid-cols-12 col-span-12 bg-black text-white p-32">
-      <span className="text-5xl font-black uppercase mb-16">Services</span>
+      <span className="text-7xl font-black uppercase mb-16">Services</span>
       <div className="grid grid-cols-12 col-span-12 justify-between item-center gap-16">
         <div className="flex flex-col col-span-6">
           {list.map((element, key) => (

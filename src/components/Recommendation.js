@@ -3,7 +3,7 @@ import React from "react";
 const Recommendation = () => {
   return (
     <div className="grid grid-cols-12 col-span-12 p-32 m-16">
-      <span className="col-span-12 text-5xl font-black uppercase mb-16">
+      <span className="col-span-12 text-7xl font-black uppercase mb-16">
         Testimonials
       </span>
       <div className="col-span-12 grid grid-cols-12 justify-center items-center">
