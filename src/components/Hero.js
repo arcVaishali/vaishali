@@ -29,7 +29,7 @@ const Hero = () => {
         style={{ ...spring }}
         className="flex flex-col col-span-12 col-start-2 col-end-12 text-center font-black text-7xl mt-32"
       >
-        <span className="col-span-12 text-center font-extralight text-5xl m-2">
+        <span className="col-span-12 text-center font-thin text-5xl m-2">
           Hey! I am Vaishali
         </span>
         <span className="col-span-12 text-center font-black text-8xl capitalize">
