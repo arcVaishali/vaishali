@@ -57,7 +57,10 @@ const Hero = () => {
       ) : (
         <Marquee className="mt-64 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700  p-4">
           {names.map((element, index) => (
-            <span className="px-8 font-light uppercase" style={{ fontFamily: "serif" }}>
+            <span
+              className="px-8 font-light uppercase"
+              style={{ fontFamily: "serif" }}
+            >
               Linkedin
             </span>
           ))}

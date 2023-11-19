@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+import Hero from "../components/About/Hero";
+import Slider from "../components/About/Slider";
 
 const About = () => {
   return (
-    <div className='grid grid-cols-12 justify-center items-center'>
+    <div>
+      <Hero/>
+      <Slider/>
 
+      <div className="gr"></div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
