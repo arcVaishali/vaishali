@@ -48,7 +48,9 @@ const Profile = () => {
       <div className="grid grid-cols-12 col-span-12 justify-center items-center">
         <span className="text-5xl font-black col-span-12 uppercase">Leetcode Stats</span>
         <div className="grid grid-cols-12 col-span-12">
-          <div></div>
+         {
+          
+         }
         </div>
       </div>
     </div>
