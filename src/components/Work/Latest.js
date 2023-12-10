@@ -22,7 +22,7 @@ const Latest = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-12 justify-center items-center p-32">
+    <div className="grid grid-cols-12 justify-center items-center px-16">
       <span className="col-span-12 col-start-2 text-7xl uppercase font-black p-16 m-8">
         Latest Projects
       </span>

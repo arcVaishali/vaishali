@@ -28,7 +28,7 @@ const Navbar = () => {
   //   } , []) ;
 
   return (
-    <div className="fixed grid grid-cols-12 w-[100vw] gap-16 justify-between items-center p-8 bg-[#f0f0f0] z-20">
+    <div className="grid grid-cols-12 w-[100vw] gap-16 justify-between items-center p-8 bg-[#f0f0f0] z-20">
       <animated.div
         style={{ ...spring }}
         className="grid grid-cols-5 col-span-6"

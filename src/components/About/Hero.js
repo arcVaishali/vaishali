@@ -4,7 +4,7 @@ const Hero = () => {
   const names = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 0];
   const imgg = [1, { one: "", two: "" }, 3, 4];
   return (
-    <div className="grid grid-cols-12 justify-center items-center pt-[200px] pl-32 pr-32 pb-8 mb-16">
+    <div className="grid grid-cols-12 justify-center items-center pt-32 pl-32 pr-32 pb-8 mb-16">
       <div className="grid grid-cols-6 col-span-12 justify-center items-center">
         <div className="col-span-6 text-7xl text-center uppercase font-black p-2">
           {" "}
@@ -39,7 +39,7 @@ const Hero = () => {
           </div>
         ))}
       </div>
-      <Marquee className="my-32 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700  p-4">
+      <Marquee className="my-32 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700 p-4">
         {names.map((element, index) => (
           <span
             className="px-8 font-light uppercase"
