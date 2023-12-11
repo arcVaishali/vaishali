@@ -26,7 +26,7 @@ const Profile = () => {
   return (
     <div className="grid grid-cols-12 col-span-12 px-32 py-16 m-8">
       <span className="col-span-12 text-7xl uppercase font-black">
-        Socials and Profiles
+        Socials and Profiles 
       </span>
       <div className="grid grid-cols-12 col-span-12 justify-center items-center mt-8 mb-8">
         <div className="grid grid-cols-6 col-span-6">
@@ -46,7 +46,7 @@ const Profile = () => {
         </div>
       </div>
       <div className="grid grid-cols-12 col-span-12 justify-center items-center">
-        <span className="text-5xl font-black col-span-12 uppercase">Leetcode Stats</span>
+        <span className="text-3xl font-light col-span-12 capitalize">Leetcode Stats</span>
         <div className="grid grid-cols-12 col-span-12">
          {
           
