@@ -29,7 +29,7 @@ const Profile = () => {
         Socials and Profiles 
       </span>
       <div className="grid grid-cols-12 col-span-12 justify-center items-center mt-8 mb-8">
-        <div className="grid grid-cols-6 col-span-7">
+        <div className="grid grid-cols-6 col-span-6">
           {list.map((element, index) => (
             <div className="flex flex-row col-span-3 items-center border-t-[1px] border-black p-4">
               <div className="w-4">
