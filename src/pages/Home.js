@@ -8,31 +8,35 @@ import Blog from "../components/Home/Blog";
 import Contact from "../components/Home/Contact";
 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import Navbar from "../components/Home/Navbar";
 
 const Home = () => {
   return (
-    <Parallax pages={20}>
-      <ParallaxLayer offset={2} speed={2} factor={8}>
-        <Hero />
+    <Parallax pages={7}>
+      <ParallaxLayer offset={1} speed={1} factor={1}>
+        <Navbar/>
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={0.2} factor={8}>
+      <ParallaxLayer offset={1} speed={1} factor={1}>
+        <Hero/>
+      </ParallaxLayer>
+      <ParallaxLayer offset={2} speed={0.2} factor={1}>
         <Stack />
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={1.25} factor={8}>
+      <ParallaxLayer offset={2} speed={1.25} factor={1}>
         <Project />
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={1} factor={8}>
+      {/* <ParallaxLayer offset={2} speed={1} factor={1}>
         <Services />
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={1.5} factor={8}>
+      <ParallaxLayer offset={2} speed={1.5} factor={1}>
         <Recommendation />
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={0.5} factor={8}>
+      <ParallaxLayer offset={2} speed={0.5} factor={1}>
         <Blog />
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={0.25} factor={8}>
+      <ParallaxLayer offset={2} speed={0.25} factor={1}>
         <Contact />
-      </ParallaxLayer>
+      </ParallaxLayer> */}
     </Parallax>
   );
 };
