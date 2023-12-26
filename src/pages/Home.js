@@ -12,32 +12,15 @@ import Navbar from "../components/Home/Navbar";
 
 const Home = () => {
   return (
-    <Parallax pages={7}>
-      <ParallaxLayer offset={1} speed={1} factor={1}>
-        <Navbar/>
-      </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={1} factor={1}>
-        <Hero/>
-      </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={0.2} factor={1}>
-        <Stack />
-      </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={1.25} factor={1}>
-        <Project />
-      </ParallaxLayer>
-      {/* <ParallaxLayer offset={2} speed={1} factor={1}>
-        <Services />
-      </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={1.5} factor={1}>
-        <Recommendation />
-      </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={0.5} factor={1}>
-        <Blog />
-      </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={0.25} factor={1}>
-        <Contact />
-      </ParallaxLayer> */}
-    </Parallax>
+    <>
+      <Hero />
+      <Stack />
+      <Project />
+      <Services />
+      <Recommendation />
+      <Blog />
+      <Contact />
+    </>
   );
 };
 
