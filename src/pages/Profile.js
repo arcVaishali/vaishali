@@ -1,4 +1,5 @@
 import React from "react";
+import Picture from "../assets/ProfilePicturecropped.jpeg"
 
 const Profile = () => {
   const list = [
@@ -24,36 +25,14 @@ const Profile = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-12 col-span-12 px-32 py-16 m-8">
-      <span className="col-span-12 text-7xl uppercase font-black">
-        Socials and Profiles 
-      </span>
-      <div className="grid grid-cols-12 col-span-12 justify-center items-center mt-8 mb-8">
-        <div className="grid grid-cols-6 col-span-6">
-          {list.map((element, index) => (
-            <div className="flex flex-row col-span-3 items-center border-t-[1px] border-black p-4">
-              <div className="w-4">
-                <img 
-                  src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"
-                  className="w-fill h-fill"
-                />
-              </div>
-              <span className="text-base text-black font-extralight">
-                {element.name} 
-              </span>
-            </div>
-          ))}
-        </div>
+    <div className="grid grid-cols-12 col-span-12 px-32 py-16 m-8 justify-center items-center">
+      <div className="w-32 h-32">
+        <img src={Picture} className="h-[200px] w-[400px]"/>
       </div>
-      <div className="grid grid-cols-12 col-span-12 justify-center items-center">
-        <span className="text-3xl font-light col-span-12 capitalize">Leetcode Stats</span>
-        <div className="grid grid-cols-12 col-span-12">
-         {
-           <div className="grid grid-cols-6 col-span-6">
-             <span className="grid col-span-3 text-xl font-extralight">Active Days</span>
-           </div>
-         }
-        </div>
+      <div className="flex-rows grid-span-12 justify-between">
+        <span className="text-sm font-extralight uppercase p-4 my-4 text-center">Vaishali</span>
+        <div className="text-sm font-extralight uppercase p-4 my-4 text-center">Vaishali</div>
+        
       </div>
     </div>
   );
