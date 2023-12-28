@@ -38,11 +38,11 @@ const Profile = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-12 col-span-12 m-8 justify-center items-center">
+    <div className="grid grid-cols-12 col-span-12 mb-8 justify-center items-center">
       <img className="col-span-12" src="https://static.vecteezy.com/system/resources/previews/002/558/855/original/abstract-dark-black-and-grey-modern-material-header-technology-banner-abstract-widescreen-background-vector.jpg"/>
       <img src={Picture} className="absolute ml-8 top-[300px] col-span-2 h-[200px] w-[200px] rounded-[800px]" />
 
-      <div className="grid grid-cols-12 col-span-12 justify-between items-center m-8">
+      <div className="grid grid-cols-12 col-span-12 justify-between items-center mt-16 mb-8 mr-8 ml-8">
         <span className="col-span-4 leading-3">
           <div className="text-xl" style={{ fontFamily: "fantasy" }}>
             Vaishali
@@ -63,6 +63,8 @@ const Profile = () => {
         </div>
       <div className="font-extralight text-sm col-span-12 text-gray-500">Mollit ut velit eiusmod pariatur Lorem non amet est.Nostrud in tempor irure id adipisicing anim.</div>
       </div>
+
+      <div className=""></div>
 
     </div>
   );
