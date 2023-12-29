@@ -5,6 +5,7 @@ import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faCircleArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import list1 from "../components/Profile/CodingProfiles";
 
@@ -19,16 +20,16 @@ const Profile = () => {
   return (
     <div className="grid grid-cols-12 col-span-12 mb-8 justify-center items-center">
       <img
-        className="col-span-12 h-[200px] w-full"
+        className="col-span-12 h-[250px] w-full"
         src="https://static.vecteezy.com/system/resources/previews/002/558/855/original/abstract-dark-black-and-grey-modern-material-header-technology-banner-abstract-widescreen-background-vector.jpg"
       />
       <img
         src={Picture}
-        className="absolute left-[100px] top-[100px] col-span-2 h-[150px] w-[150px] rounded-[200px]"
+        className="absolute left-[100px] top-[100px] col-span-2 h-[200px] w-[200px] rounded-[200px]"
       />
 
       <div className="grid grid-cols-10 col-span-10 col-start-2 justify-between items-center m-8">
-        <span className="col-span-4 leading-7">
+        <span className="col-span-4 leading-7 m-4">
           <div className="text-5xl" style={{ fontFamily: "fantasy" }}>
             Vaishali
           </div>
@@ -58,7 +59,7 @@ const Profile = () => {
       </div>
 
       {list1.map((element, key) => (
-        <div className="grid grid-cols-10 col-span-10 col-start-2 justify-between items-center bg-white rounded-lg shadow-md p-8 m-2">
+        <div className="grid grid-cols-10 col-span-10 col-start-2 justify-between items-center bg-white rounded-lg shadow-md p-8 m-8">
           <span className="col-span-10 font-extrabold text-xl capitalize text-gray-600">
             {element.name}
           </span>
@@ -70,6 +71,12 @@ const Profile = () => {
               <img className="h-8 w-8" src={ele.icon} />
               <span className="text-gray-700 text-l font-bold">
                 {ele.header}
+                <FontAwesomeIcon
+                className="mx-4 text-white"
+                  icon={faCircleArrowDown}
+                  size="sm"
+                  transform={{ rotate: 225 }}
+                ></FontAwesomeIcon>
               </span>
             </Link>
           ))}
