@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { animated, useSpring } from "@react-spring/web";
+import Logo from "../../assets/VaishaliPortfolioLOGO.png";
 
 const Navbar = () => {
   const navLink = [
@@ -33,7 +34,9 @@ const Navbar = () => {
         style={{ ...spring }}
         className="grid grid-cols-5 col-span-6"
       >
-        Vaishali
+        <Link to="/">
+          <img className="ml-4" src={Logo} />
+        </Link>
       </animated.div>
       <animated.div style={{ ...spring }} className="flex col-span-6 gap-8">
         {navLink.map((element) => (
