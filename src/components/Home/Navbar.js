@@ -28,7 +28,7 @@ const Navbar = () => {
   //   } , []) ;
 
   return (
-    <div className="grid grid-cols-12 w-[100vw] gap-16 justify-between items-center p-8 bg-[#f0f0f0] z-20">
+    <div className="grid grid-cols-12 w-[100vw] gap-16 justify-between items-center p-4 bg-[#f0f0f0]">
       <animated.div
         style={{ ...spring }}
         className="grid grid-cols-5 col-span-6"
@@ -39,7 +39,7 @@ const Navbar = () => {
         {navLink.map((element) => (
           <Link
             to={element.to}
-            className="uppercase font-extralight grid col-span-1 hover:text-gray-600 focus:underline active:underline"
+            className="uppercase text-sm font-extralight grid col-span-1 hover:text-gray-600 focus:underline active:underline"
             style={
               location.pathname === element.to
                 ? { textDecoration: "underline" }
