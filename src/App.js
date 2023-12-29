@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Profile from "./pages/Profile";
 import Work from "./pages/Work";
 import Blog from "./pages/Blog";
+import Contact2 from "./components/Home/Contact"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/test" element={<Test />}></Route>
       </Routes>
+      <Contact2 />
       <Footer />
     </BrowserRouter>
   );
