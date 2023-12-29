@@ -22,7 +22,7 @@ const Header = () => {
       />
       <img
         src={Picture}
-        className="absolute left-[100px] top-[100px] col-span-2 h-[200px] w-[200px] rounded-[200px]"
+        className="absolute left-[120px] top-[100px] col-span-2 h-[200px] w-[200px] rounded-[200px]"
       />
 
       <div className="grid grid-cols-10 col-span-10 col-start-2 justify-between items-center m-8">
