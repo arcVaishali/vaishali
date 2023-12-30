@@ -21,7 +21,7 @@ const Header = () => {
         className="col-span-12 h-[250px] w-full"
         src="https://static.vecteezy.com/system/resources/previews/002/558/855/original/abstract-dark-black-and-grey-modern-material-header-technology-banner-abstract-widescreen-background-vector.jpg"
       /> */}
-
+{/* <span className="col-span-12 col-start-2 text-7xl uppercase font-extrabold p-16 ml-8">socials and profiles</span> */}
       <div className="grid grid-cols-10 col-span-10 col-start-2 justify-between items-center m-8">
         <span className="col-span-4 leading-7 m-4">
           <img

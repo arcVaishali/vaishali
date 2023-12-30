@@ -6,6 +6,7 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import Logo from "../../assets/final_logo_design_4_dark.png"
 
 const Footer = () => {
   const sitemap = [
@@ -26,7 +27,9 @@ const Footer = () => {
   ];
   return (
     <div className="grid grid-cols-12 col-span-12 px-16 py-8 justify-between items-center bg-[#121212] border-t-[1px] border-b-[1px] border-gray-700 text-white">
-      <div className="col-span-3">Vaishali</div>
+      <Link className="col-span-3 w-16" to="/">
+          <img src={Logo} />
+        </Link>
       <div className="flex col-span-6 justify-center items-center">
         {sitemap.map((element, index) => (
           <Link
