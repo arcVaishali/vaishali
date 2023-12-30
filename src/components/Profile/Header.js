@@ -6,6 +6,7 @@ import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import LogoOption from "../../assets/VaishaliPortfolioLOGO.png";
 
 const Header = () => {
   const list = [
@@ -16,22 +17,21 @@ const Header = () => {
   ];
   return (
     <div className="col-span-12 grid grid-cols-12 mb-4 justify-center items-center">
-      <img
+      {/* <img
         className="col-span-12 h-[250px] w-full"
         src="https://static.vecteezy.com/system/resources/previews/002/558/855/original/abstract-dark-black-and-grey-modern-material-header-technology-banner-abstract-widescreen-background-vector.jpg"
-      />
-      <img
-        src={Picture}
-        className="absolute left-[120px] top-[100px] col-span-2 h-[200px] w-[200px] rounded-[200px]"
-      />
+      /> */}
 
       <div className="grid grid-cols-10 col-span-10 col-start-2 justify-between items-center m-8">
         <span className="col-span-4 leading-7 m-4">
-          <div className="text-5xl" style={{ fontFamily: "fantasy" }}>
-            Vaishali
-          </div>
+          <img
+            src={Picture}
+            className="col-span-2 h-[200px] w-[200px] rounded-[200px]"
+          />
+          <img className="w-32" src={LogoOption} />
+
           <Link
-            className="underline text-[12px] font-extralight italic text-gray-500"
+            className="underline text-[12px] font-semibold text-gray-700"
             to="/"
           >
             Check out
@@ -49,10 +49,10 @@ const Header = () => {
             </Link>
           ))}
         </div>
-        <div className="font-extralight text-sm col-span-12 text-gray-500">
+        <div className="text-sm font-normal col-span-12 text-gray-500 ml-4">
           Mollit ut velit eiusmod pariatur Lorem non amet est.Nostrud in tempor
-          irure id adipisicing anim. velit eiusmod pariatur Lorem non amet est.Nostrud in tempor
-          irure id adipisicing anim.
+          irure id adipisicing anim. velit eiusmod pariatur Lorem non amet
+          est.Nostrud in tempor irure id adipisicing anim.
         </div>
       </div>
     </div>
