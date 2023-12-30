@@ -19,6 +19,7 @@ const Home = () => {
       <Services />
       <Recommendation />
       <Blog />
+      <Contact/>
     </>
   );
 };
