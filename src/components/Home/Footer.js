@@ -20,8 +20,8 @@ const Footer = () => {
 
   const socials = [
     { name: faInstagram, to: "https://www.instagram.com/vaishali_p14" },
-    { name: faLinkedin, to: "https://www.instagram.com/vaishali_p14" },
-    { name: faTwitter, to: "https://www.instagram.com/vaishali_p14" },
+    { name: faLinkedin, to: "https://www.linkedin.com/in/vaishali-p-97326221b/" },
+    { name: faTwitter, to: "https://twitter.com/Vaishali_P14" },
     // {to:"https://www.instagram.com/vaishali_p14"},
     // {to:"https://www.instagram.com/vaishali_p14"},
   ];
