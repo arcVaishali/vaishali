@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: "about", to: "/about" },
     { name: "work", to: "/work" },
     { name: "blog", to: "/blog" },
-    { name: "profiles", to: "/profile" },
+    { name: "profile", to: "/profile" },
     { name: "contact", to: "/contact" },
   ];
   const location = useLocation();
