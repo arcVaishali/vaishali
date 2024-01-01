@@ -1,26 +1,57 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import ProjectImage from "../../assets/project_image.png";
+import ReliefConnect from "../../assets/ReliefConnect.png"
+import EmbraceAutism from "../../assets/EmbraceAutism.png"
+import MigrantMingle from "../../assets/MigrantMingle.png"
+import RaiseWaves from "../../assets/RaiseWaves.png"
 
 const Project = () => {
-  const list = [1, 2, 3, 4];
+  const list = [
+    {
+      to: "/",
+      src: ReliefConnect,
+      text: "Relief Connect",
+    },
+    {
+      to: "/",
+      src: EmbraceAutism,
+      text: "Embrace Autism",
+    },
+    {
+      to: "/",
+      src: MigrantMingle,
+      text: "Migrant Mingle",
+    },
+    {
+      to: "/",
+      src: RaiseWaves,
+      text: "Raise Waves",
+    },
+  ];
+
+  function handle(){
+
+  }
   return (
     <div className="grid grid-cols-12 col-span-12 justify-center items-center m-32 gap-8">
-      <span className="col-start-2 col-end-9 text-7xl font-black uppercase">
+      <span className="col-start-2 ml-16 col-end-12 text-6xl font-black uppercase mb-8">
         Featured Projects
       </span>
-      <img
-        src="https://assets.website-files.com/64400efa17592edf6ae1a250/64400f4f88d17b66010d4658_Rectangle%2041162.jpg"
-        className="col-span-4 w-fill h-fill"
-      />
+
       <div className="grid grid-cols-12 col-span-12 gap-8 justify-between col-start-1">
         {list.map((element, index) => (
-          <div className="flex flex-col col-span-6">
-            <div className="">
-              <img
-                src="https://assets.website-files.com/64400efa17592edf6ae1a250/64400f4f88d17b66010d4658_Rectangle%2041162.jpg"
-                className="w-fill h-fill"
-              />
-            </div>
-          </div>
+          <Link to={element.to} className="flex flex-col col-span-6" onMouseOver={()=>handle()}>
+            <img src={element.src} className="h-80" />
+
+            <span className="text-black font-extralight text-sm p-4">
+              Eu ex dolor reprehenderit ex magna incididunt minim officia id laboris duis ipsum.
+              <div className="font-normal underline"> 
+
+              {element.text}
+              </div>
+            </span>
+          </Link>
         ))}
       </div>
     </div>
