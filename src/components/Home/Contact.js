@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 const Contact = () => {
   return (
@@ -8,9 +9,9 @@ const Contact = () => {
         style={{ fontFamily: "Fontsfree net xillian, sans-serif" }}
       >
         <span className="text-center m-2">Have an Idea?</span>
-        <button className="rounded-full uppercase py-4 px-8 border-[1px] border-white hover:bg-[#e4eae4da] hover:text-black">
+        <Link to="/contact" className="rounded-full uppercase py-4 px-8 border-[1px] border-white hover:bg-[#e4eae4da] hover:text-black">
           Contact
-        </button>
+        </Link>
       </div>
     </div>
   );
