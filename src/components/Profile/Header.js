@@ -10,10 +10,10 @@ import LogoOption from "../../assets/VaishaliPortfolioLOGO.png";
 
 const Header = () => {
   const list = [
-    { icon: faInstagramSquare, color: "pink", to: "/" },
-    { icon: faLinkedin, color: "blue", to: "/" },
-    { icon: faTwitter, color: "lightblue", to: "/" },
-    { icon: faGithub, color: "black", to: "/" },
+    { icon: faInstagramSquare, color: "pink", to: "https://www.instagram.com/vaishali_p14" },
+    { icon: faLinkedin, color: "blue", to: "https://www.linkedin.com/in/vaishali-p-97326221b/" },
+    { icon: faTwitter, color: "lightblue", to: "https://twitter.com/Vaishali_P14" },
+    { icon: faGithub, color: "black", to: "https://www.github.com/arcVaishali" },
   ];
   return (
     <div className="col-span-12 grid grid-cols-12 mb-4 justify-center items-center">
