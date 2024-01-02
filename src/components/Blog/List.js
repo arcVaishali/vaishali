@@ -1,27 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const List = () => {
-  const list = [1, 2, 3, 4];
+  const list = [
+    {
+      to:"https://vaishalionlc.hashnode.dev/leetcode-2653-sliding-subarray-beauty",
+      src: "https://cdn.hashnode.com/res/hashnode/image/upload/v1680529848031/c021c599-1102-46b6-a620-503ff68f0a20.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+      text: "Leetcode #2653 Sliding Subarray Beauty",
+    },
+    {
+      to:"https://vaishalionlc.hashnode.dev/leetcode-881-boats-to-save-people",
+      src: "https://cdn.hashnode.com/res/hashnode/image/upload/v1680529848031/c021c599-1102-46b6-a620-503ff68f0a20.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+      text: "Leetcode #881: Boats to Save People",
+    },
+  ];
 
   return (
     <div className="grid grid-cols-12 col-span-12 justify-center items-center gap-8 p-4">
       {list.map((element, index) => (
-        <div className="col-span-6 p-4">
+        <Link to={element.to} className="col-span-6 p-4">
           <div>
-            <img
-              src="https://assets.website-files.com/64400efa17592edf6ae1a250/65093026e0d80c3d17acc9c4_rectangle_41210-p-800.webp"
-              className="h-fill w-fill"
-            />
+            <img src={element.src} className="h-fill w-fill" />
           </div>
-          <div className="text-sm font-extralight p-2">
-            Eiusmod id aliquip dolore ex cupidatat cupidatat laboris enim eu
-            elit.Minim ea consequat ad ea.Duis mollit nostrud cillum eu
-            excepteur pariatur aliquip.
-          </div>
-          <button className="bg-transparent text-black underline">
+          <div className="text-base font-extralight p-2">{element.text}</div>
+          <Link to={element.to} className="bg-transparent text-black underline p-2">
             Read more
-          </button>
-        </div>
+          </Link>
+        </Link>
       ))}
     </div>
   );
