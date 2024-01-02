@@ -18,12 +18,12 @@ const List = () => {
   return (
     <div className="grid grid-cols-12 col-span-12 justify-center items-center gap-8 p-4">
       {list.map((element, index) => (
-        <Link to={element.to} className="col-span-6 p-4">
+        <Link to={element.to} target="_blank" className="col-span-6 p-4">
           <div>
             <img src={element.src} className="h-fill w-fill" />
           </div>
           <div className="text-base font-extralight p-2">{element.text}</div>
-          <Link to={element.to} className="bg-transparent text-black underline p-2">
+          <Link to={element.to} target="_blank" className="bg-transparent text-black underline p-2">
             Read more
           </Link>
         </Link>

@@ -45,6 +45,7 @@ const Project = () => {
         {list.map((element, index) => (
           <Link
             to={element.to}
+            target="_blank"
             className="flex flex-col col-span-6"
             onMouseOver={() => handle()}
           >
@@ -52,7 +53,7 @@ const Project = () => {
 
             <span className="text-black font-extralight text-sm p-4">
               {element.body}
-              <div className="font-normal underline">{element.text}</div>
+              <Link to={element.to} target="_blank" className="font-normal underline block">{element.text}</Link>
             </span>
           </Link>
         ))}

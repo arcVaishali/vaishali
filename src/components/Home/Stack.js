@@ -1,6 +1,7 @@
 import React from 'react'
 import {SiReact} from 'react-icons/si'
 import { animated, useSpring } from "@react-spring/web";
+import TechStack from "../../assets/techStack.png"
 
 const Stack = () => {
   const [spring, api] = useSpring(() => ({
@@ -18,15 +19,7 @@ const Stack = () => {
             <span className='text-sm col-span-6 font-light'> Labore et dolor consequat ea velit. t dolor consequat ea velit. t dolor consequat ea velit.</span>
         </div>
         <div className='grid grid-cols-5 col-span-5'>
-            <SiReact size="70"/>
-            <SiReact size="70"/>
-            <SiReact size="70"/>
-            <SiReact size="70"/>
-            <SiReact size="70"/>
-            <SiReact size="70"/>
-            <SiReact size="70"/>
-            <SiReact size="70"/>
-            <SiReact size="70"/>
+            <img className="w-fill h-fill col-span-5" src={TechStack}/>
         </div>
 
     </div>
