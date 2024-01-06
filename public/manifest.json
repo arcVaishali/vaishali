@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Vaishali",
+  "name": "Life is not about finding yourself. Life is about creating yourself.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "Vaishali.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "Vaishali.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "Vaishali.png",
       "type": "image/png",
       "sizes": "512x512"
     }
