@@ -2,26 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { card } from "../../constants/index";
 
 const Achievement = () => {
-  const card = [
-    {
-      title: "Name of Award",
-      tag: "sss",
-    },
-    {
-      title: "Name of Award",
-      tag: "sss",
-    },
-    {
-      title: "Name of Award",
-      tag: "sss",
-    },
-    {
-      title: "Name of Award",
-      tag: "sss",
-    },
-  ];
+  const cols = [1, 2];
   return (
     <div className="grid grid-cols-12 col-span-12 p-32 m-4">
       <div className="grid grid-cols-12 col-span-12 justify-center items-center">
@@ -32,20 +16,24 @@ const Achievement = () => {
           Get in Touch
         </button>
       </div>
-      <div className="grid grid-col-6 col-span-6 p-4 mt-8">
-        {card.map((element, index) => (
-          <div className="flex col-span-6 justify-between items-center border-t-[1px] border-black p-4">
-            <span className="uppercase">{element.title}</span>
-            <button className="border-[1px] border-black rounded-full p-2">
-              {element.tag}
-            </button>
-            <FontAwesomeIcon
-              icon={faArrowAltCircleRight}
-              className="cursor-pointer"
-              size="xl"
-              swapOpacity
-              transform={{ rotate: 315 }}
-            />
+      <div className="grid grid-col-12 col-span-12 p-4 mt-8">
+        {cols.map((ele, idx) => (
+          <div className="grid grid-cols-12 col-span-6 gap-8">
+            {card.map((element, index) => (
+              <div className="flex col-span-6 justify-between items-center border-t-[1px] border-black p-4">
+                <span className="uppercase">{element.title}</span>
+                <button className="border-[1px] border-black rounded-full p-2">
+                  {element.tag}
+                </button>
+                <FontAwesomeIcon
+                  icon={faArrowAltCircleRight}
+                  className="cursor-pointer"
+                  size="xl"
+                  swapOpacity
+                  transform={{ rotate: 315 }}
+                />
+              </div>
+            ))}
           </div>
         ))}
       </div>
