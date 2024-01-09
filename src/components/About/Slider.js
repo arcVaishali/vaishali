@@ -1,54 +1,28 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { animated, useSpring } from "@react-spring/web";
+import { SliderCardValues } from "../../constants";
+import { SliderCardResponsiveDesign } from "../../constants";
 
 const Slider = () => {
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1,
-    },
-  };
+  const style1 = useSpring({
+    from: { x: -50, opacity: 0 },
+    to: { x: 0, opacity: 1 },
+  });
 
-  const card = [
-    {
-      mini: "S/3",
-      title: "Webflow Website",
-      body: "Aliqua adipisicing dolore aliqua ex ipsum do sit cupidatat esse ipsum.Quis ea in irure veniam ex eiusmod.Magna labore magna consectetur id dolor amet tempor incididunt excepteur laborum.",
-    },
-    {
-      mini: "S/3",
-      title: "Webflow Website",
-      body: "Aliqua adipisicing dolore aliqua ex ipsum do sit cupidatat esse ipsum.Quis ea in irure veniam ex eiusmod.Magna labore magna consectetur id dolor amet tempor incididunt excepteur laborum.",
-    },
-    {
-      mini: "S/3",
-      title: "Webflow Website",
-      body: "Aliqua adipisicing dolore aliqua ex ipsum do sit cupidatat esse ipsum.Quis ea in irure veniam ex eiusmod.Magna labore magna consectetur id dolor amet tempor incididunt excepteur laborum.",
-    },
-    {
-      mini: "S/3",
-      title: "Webflow Website",
-      body: "Aliqua adipisicing dolore aliqua ex ipsum do sit cupidatat esse ipsum.Quis ea in irure veniam ex eiusmod.Magna labore magna consectetur id dolor amet tempor incididunt excepteur laborum.",
-    },
-  ];
-
+  const styleOnCard = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+  });
   return (
     <div className="grid grid-cols-12 col-span-12 justify-center items-center px-16 py-8 my-32">
-      <span className="col-span-12 text-6xl uppercase font-black col-start-1 text-center my-8">
+      <animated.span
+        style={{ ...style1 }}
+        className="col-span-12 text-6xl uppercase font-black col-start-1 text-center my-8"
+      >
         What to expect from me
-      </span>
+      </animated.span>
 
       <Carousel
         additionalTransfrom={0}
@@ -67,7 +41,7 @@ const Slider = () => {
         renderArrowsWhenDisabled={false}
         renderButtonGroupOutside={false}
         renderDotsOutside={false}
-        responsive={responsive}
+        responsive={SliderCardResponsiveDesign}
         rewind={false}
         rewindWithAnimation={false}
         rtl={false}
@@ -77,12 +51,30 @@ const Slider = () => {
         slidesToSlide={2}
         swipeable
       >
-        {card.map((element, index) => (
-          <div className="flex flex-col bg-white p-4" style={{border:"5px double gray"}}>
-            <span className="text-xs font-extralight m-2">{element.mini}</span>
-            <span className="text-xl font-semibold m-2">{element.title}</span>
-            <span className="text-base font-light m-2">{element.body}</span>
-          </div>
+        {SliderCardValues.map((element, index) => (
+          <animated.div
+            className="flex flex-col bg-white p-4"
+            style={{ border: "5px double gray", ...styleOnCard }}
+          >
+            <animated.span
+              style={{ ...styleOnCard }}
+              className="text-xs font-extralight m-2"
+            >
+              {element.mini}
+            </animated.span>
+            <animated.span
+              style={{ ...styleOnCard }}
+              className="text-xl font-semibold m-2"
+            >
+              {element.title}
+            </animated.span>
+            <animated.span
+              style={{ ...styleOnCard }}
+              className="text-base font-light m-2"
+            >
+              {element.body}
+            </animated.span>
+          </animated.div>
         ))}
       </Carousel>
     </div>
