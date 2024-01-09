@@ -1,34 +1,28 @@
 import React from "react";
+import { ongoingProjectCard } from "../../constants/index";
+import { animated, useSpring } from "@react-spring/web";
 
 const Latest = () => {
-  const img = [
-    {
-      category: "Development",
-      image:
-        "https://assets.website-files.com/64400efa17592edf6ae1a250/64e6f35a2dd4319151e11b5e_Rectangle%2041170-p-500.png",
-      name: "MediCare",
-    },
-    {
-      category: "Development",
-      image:
-        "https://assets.website-files.com/64400efa17592edf6ae1a250/64e6f35a2dd4319151e11b5e_Rectangle%2041170-p-500.png",
-      name: "MediCare",
-    },
-    {
-      category: "Development",
-      image:
-        "https://assets.website-files.com/64400efa17592edf6ae1a250/64e6f35a2dd4319151e11b5e_Rectangle%2041170-p-500.png",
-      name: "MediCare",
-    },
-  ];
+  const styleX = useSpring({
+    from: { x: -50, opacity: 0 },
+    to: { x: 0, opacity: 1 },
+  });
+  const styleY = useSpring({
+    from: { y: 100 },
+    to: { y: 0 },
+  });
+
   return (
     <div className="grid grid-cols-12 justify-center items-center px-16">
-      <span className="col-span-12 col-start-2 ml-16 text-7xl uppercase font-black p-16 m-8">
+      <animated.span
+        style={{ ...styleX }}
+        className="col-span-12 col-start-2 ml-16 text-7xl uppercase font-black p-16 m-8"
+      >
         Latest Projects
-      </span>
+      </animated.span>
       <div className="grid grid-cols-12 col-span-12 gap-16 justify-center items-center">
-        {img.map((element, index) => (
-          <div className="flex flex-col col-span-4">
+        {ongoingProjectCard.map((element, index) => (
+          <animated.div style={{ ...styleY}} className="flex flex-col col-span-4">
             <span className="border-l-8 border-black text-xs uppercase p-2 my-8">
               {element.category}
             </span>
@@ -40,7 +34,7 @@ const Latest = () => {
               {element.name}
             </span>
             {/* </div> */}
-          </div>
+          </animated.div>
         ))}
       </div>
     </div>
