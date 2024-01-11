@@ -16,7 +16,7 @@ import Contact2 from "./components/Home/Contact"
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
@@ -26,7 +26,7 @@ function App() {
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/test" element={<Test />}></Route>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
