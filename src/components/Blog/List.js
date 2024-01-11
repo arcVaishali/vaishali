@@ -18,7 +18,14 @@ const List = () => {
   return (
     <div className="grid grid-cols-12 col-span-12 justify-center items-center gap-8 p-4">
       {list.map((element, index) => (
-        <Link to={element.to} target="_blank" className="col-span-6 p-4">
+        <Link data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="linear"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center" to={element.to} target="_blank" className="col-span-6 p-4">
           <div>
             <img src={element.src} className="h-fill w-fill" />
           </div>

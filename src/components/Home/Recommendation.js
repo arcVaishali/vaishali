@@ -23,7 +23,8 @@ const Recommendation = () => {
             className="w-fill h-fill"
           />
         </div>
-        <div data-aos="fade-in"
+        <div
+          data-aos="fade-in"
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000"
@@ -31,7 +32,8 @@ const Recommendation = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-center"
-           className="col-span-6 text-sm font-extralight">
+          className="col-span-6 text-sm font-extralight"
+        >
           Voluptate do aliqua aliqua duis esse nisi.Enim incididunt id sunt sit
           nisi incididunt sint mollit veniam eiusmod.Sit qui duis occaecat minim
           dolor.
