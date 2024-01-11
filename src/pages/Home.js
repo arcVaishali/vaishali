@@ -20,13 +20,13 @@ const ContactAnimatedComp = animated(Contact);
 const Home = () => {
   return (
     <>
-      {/* <HeroAnimatedComp /> */}
-      {/* <StackAnimatedComp /> */}
+      <HeroAnimatedComp />
+      <StackAnimatedComp />
       <ProjectAnimatedComp />
-      {/* <ServicesAnimatedComp /> */}
-      {/* <RecommendationAnimatedComp /> */}
-      {/* <BlogAnimatedComp /> */}
-      {/* <ContactAnimatedComp/> */}
+      <ServicesAnimatedComp />
+      <RecommendationAnimatedComp />
+      <BlogAnimatedComp />
+      <ContactAnimatedComp/>
     </>
   );
 };
