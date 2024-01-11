@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { projectList } from "../../constants";
+
 const Project = () => {
   function handle() {}
   return (
@@ -12,10 +13,18 @@ const Project = () => {
       <div className="grid grid-cols-12 col-span-12 gap-8 justify-between col-start-1">
         {projectList.map((element, index) => (
           <Link
+            data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
             to={element.to}
             target="_blank"
             className="flex flex-col col-span-6"
-            onMouseOver={() => handle()}
+            // onMouseOver={() => handle()}
           >
             <img src={element.src} className="h-80" />
 

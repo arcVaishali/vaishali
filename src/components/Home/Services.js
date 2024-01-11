@@ -12,7 +12,13 @@ const Services = () => {
   ];
   return (
     <div className="grid grid-cols-12 col-span-12 bg-black text-white p-32">
-      <span className="text-7xl font-black uppercase mb-16">Services</span>
+      <span  data-aos="fade-in"
+        data-aos-offset="10"
+        data-aos-delay="50"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false" className="text-7xl font-black uppercase mb-16">Services</span>
       <div className="grid grid-cols-12 col-span-12 justify-between item-center gap-16">
         <Link
           to="https://www.fiverr.com/vaishali_p14?up_rollout=true"
@@ -26,7 +32,16 @@ const Services = () => {
             </span>
           ))}
         </Link>
-        <div className="col-span-4 col-start-9">
+        <div  
+        data-aos="fade-in"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false" 
+        data-aos-anchor-placement="top-center"
+        className="col-span-4 col-start-9">
           <img
             src="https://assets.website-files.com/643d8b145b9de160a97cf566/64719a153090a633cf8ae8a3_Rectangle%2041158%20(1).png"
             className="w-fill h-fill"

@@ -1,5 +1,4 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { React , useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -11,9 +10,16 @@ import About from "./pages/About";
 import Profile from "./pages/Profile";
 import Work from "./pages/Work";
 import Blog from "./pages/Blog";
-import Contact2 from "./components/Home/Contact"
+import Contact2 from "./components/Home/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();    
+  }, []);
+
   return (
     <BrowserRouter>
       <Navbar />

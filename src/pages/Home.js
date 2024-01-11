@@ -1,4 +1,4 @@
-import React from "react";
+import {React , useEffect} from "react";
 import Hero from "../components/Home/Hero";
 import Stack from "../components/Home/Stack";
 import Project from "../components/Home/Project";
@@ -17,6 +17,8 @@ const ServicesAnimatedComp = animated(Services);
 const RecommendationAnimatedComp = animated(Recommendation);
 const BlogAnimatedComp = animated(Blog);
 const ContactAnimatedComp = animated(Contact);
+
+// ‍⁡⁡
 const Home = () => {
   return (
     <>
