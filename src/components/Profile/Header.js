@@ -2,26 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Picture from "../../assets/ProfilePicturecropped.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import LogoOption from "../../assets/VaishaliPortfolioLOGO.png";
+import { iconList } from "./CodingProfiles";
 
 const Header = () => {
-  const list = [
-    { icon: faInstagramSquare, color: "pink", to: "https://www.instagram.com/vaishali_p14" },
-    { icon: faLinkedin, color: "blue", to: "https://www.linkedin.com/in/vaishali-p-97326221b/" },
-    { icon: faTwitter, color: "lightblue", to: "https://twitter.com/Vaishali_P14" },
-    { icon: faGithub, color: "black", to: "https://www.github.com/arcVaishali" },
-  ];
   return (
     <div className="col-span-12 grid grid-cols-12 mb-4 justify-center items-center">
-      {/* <img
-        className="col-span-12 h-[250px] w-full"
-        src="https://static.vecteezy.com/system/resources/previews/002/558/855/original/abstract-dark-black-and-grey-modern-material-header-technology-banner-abstract-widescreen-background-vector.jpg"
-      /> */}
-{/* <span className="col-span-12 col-start-2 text-7xl uppercase font-extrabold p-16 ml-8">socials and profiles</span> */}
       <div className="grid grid-cols-10 col-span-10 col-start-2 justify-between items-center m-8">
         <span className="col-span-4 leading-7 m-4">
           <img
@@ -38,7 +24,7 @@ const Header = () => {
           </Link>
         </span>
         <div className="flex justify-end items-end col-span-8 mb-2">
-          {list.map((element, key) => (
+          {iconList.map((element, key) => (
             <Link to={element.to}>
               <FontAwesomeIcon
                 icon={element.icon}

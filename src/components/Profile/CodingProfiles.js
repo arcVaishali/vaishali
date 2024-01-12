@@ -1,3 +1,7 @@
+import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const list1 = [
   {
     name: "Problem Solving",
@@ -52,3 +56,10 @@ const list1 = [
 ];
 
 export default list1;
+
+export const iconList = [
+  { icon: faInstagramSquare, color: "pink", to: "https://www.instagram.com/vaishali_p14" },
+  { icon: faLinkedin, color: "blue", to: "https://www.linkedin.com/in/vaishali-p-97326221b/" },
+  { icon: faTwitter, color: "lightblue", to: "https://twitter.com/Vaishali_P14" },
+  { icon: faGithub, color: "black", to: "https://www.github.com/arcVaishali" },
+];
