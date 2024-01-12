@@ -1,6 +1,7 @@
 import React from "react";
-import { dummyImage } from "../../constants";
-import { dummyImage2 } from "../../constants";
+import { dummyImage } from "../../constants/imageList";
+import { dummyImage2 } from "../../constants/imageList";
+
 const Recommendation = () => {
   return (
     <div className="grid grid-cols-12 col-span-12 p-32 m-16">

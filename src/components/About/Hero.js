@@ -1,6 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { animated, useSpring } from "@react-spring/web";
+import { aboutSectionImage1, aboutSectionImage2, aboutSectionImage3 } from "../../constants/imageList";
 
 const Hero = () => {
   const names = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 0];
@@ -43,19 +44,19 @@ const Hero = () => {
               <div>
                 <animated.div style={{...styleOnImage}} className="col-span-1">
                   <img
-                    src="https://assets.website-files.com/643d8b145b9de160a97cf566/64420e1eea57b57367586b32_Rectangle%2041186.jpg"
+                    src={aboutSectionImage1}
                     className="w-32 h-fill"
                   />
                 </animated.div>
                 <animated.div style={{...styleOnImage}} className="relative z-10 left-32 col-span-1">
                   <img
-                    src="https://assets.website-files.com/643d8b145b9de160a97cf566/64420e1e621d9f5fb6e41cd5_Rectangle%2041189.jpg"
+                    src={aboutSectionImage2}
                     className="w-32 h-fill"
                   />
                 </animated.div>
               </div>
             ) : (
-              <img src="https://assets.website-files.com/643d8b145b9de160a97cf566/64420e1ebded42e6dcc69ef5_Rectangle%2041185.jpg" />
+              <img src={aboutSectionImage3} />
             )}
           </div>
         ))}

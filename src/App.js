@@ -4,8 +4,6 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Navbar from "../src/components/Home/Navbar";
 import Footer from "../src/components/Home/Footer";
-import Test from "../src/components/Home/Test";
-import { useScroll, animated } from "@react-spring/web";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
 import Work from "./pages/Work";
@@ -37,7 +35,6 @@ function App() {
         <Route path="/profile" element={<Profile />}></Route>
         <Route path="/work" element={<Work />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
-        <Route path="/test" element={<Test />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

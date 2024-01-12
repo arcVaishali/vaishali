@@ -4,6 +4,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { FAQcard } from "../../constants";
 import { animated, useSpring } from "@react-spring/web";
+import { image1 } from "../../constants/imageList";
 
 const FAQ = () => {
   const [show, setShow] = useState(false);
@@ -30,7 +31,7 @@ const FAQ = () => {
       <div className="grid grid-cols-12 col-span-12 justify-between gap-16 p-8">
         <animated.span style={{ ...style1 }} className="col-span-4">
           <img
-            src="https://assets.website-files.com/643d8b145b9de160a97cf566/6442ac2b40e4d57243e355ea_Rectangle%205.jpg"
+            src={image1}
             className="w-fill h-fill"
           />
         </animated.span>

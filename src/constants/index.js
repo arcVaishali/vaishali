@@ -210,5 +210,6 @@ export const domainList = [
   "Blogging",
 ];
 
-export const dummyImage = "https://assets.website-files.com/643d8b145b9de160a97cf566/644146cc0b106fd053b1b3fd_Rectangle%2041179.jpg" ;
-export const dummyImage2 = "https://assets.website-files.com/643d8b145b9de160a97cf566/64414cd179cae64ec7f55948_Group%20427319265.svg";
+export const recommendationList = [
+  "Voluptate do aliqua aliqua duis esse nisi.Enim incididunt id sunt sit nisi incididunt sint mollit veniam eiusmod.Sit qui duis occaecat minim dolor."
+]
