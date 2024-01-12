@@ -17,7 +17,7 @@ function App() {
       offset: 200,
       delay: 50,
       duration: 1000,
-      easing: "linear",
+      easing: "ease-in-out",
       mirror: true,
       once: false,
       anchorPlacement: "top-center",
