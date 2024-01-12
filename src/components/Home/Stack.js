@@ -21,7 +21,6 @@ const Stack = () => {
           data-aos-easing="ease-in-out"
           className="text-sm col-span-6 font-light"
         >
-          {" "}
           Labore et dolor consequat ea velit. t dolor consequat ea velit. t
           dolor consequat ea velit.
         </span>

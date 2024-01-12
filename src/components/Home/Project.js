@@ -14,13 +14,7 @@ const Project = () => {
         {projectList.map((element, index) => (
           <Link
             data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
             to={element.to}
             target="_blank"
             className="flex flex-col col-span-6"

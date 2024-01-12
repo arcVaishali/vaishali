@@ -3,6 +3,11 @@ import ReliefConnect from "../assets/ReliefConnect.png";
 import EmbraceAutism from "../assets/EmbraceAutism.png";
 import MigrantMingle from "../assets/MigrantMingle.png";
 import RaiseWaves from "../assets/RaiseWaves.png";
+import {
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const exp = [
   {
@@ -157,3 +162,53 @@ export const projectList = [
     text: "Raise Waves",
   },
 ];
+
+export const blogData = [
+  {
+    to: "https://vaishalionlc.hashnode.dev/leetcode-2653-sliding-subarray-beauty",
+    src: "https://cdn.hashnode.com/res/hashnode/image/upload/v1680529848031/c021c599-1102-46b6-a620-503ff68f0a20.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    text: "Leetcode #2653 Sliding Subarray Beauty",
+  },
+  {
+    to: "https://vaishalionlc.hashnode.dev/leetcode-881-boats-to-save-people",
+    src: "https://cdn.hashnode.com/res/hashnode/image/upload/v1680529848031/c021c599-1102-46b6-a620-503ff68f0a20.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    text: "Leetcode #881: Boats to Save People",
+  },
+];
+
+export const sitemap = [
+  { name: "home", to: "/" },
+  { name: "about", to: "/about" },
+  { name: "work", to: "/work" },
+  { name: "blog", to: "/blog" },
+  { name: "profile", to: "/profile" },
+  { name: "contact", to: "/contact" },
+];
+
+export const socials = [
+  { name: faInstagram, to: "https://www.instagram.com/vaishali_p14" },
+  { name: faLinkedin, to: "https://www.linkedin.com/in/vaishali-p-97326221b/" },
+  { name: faTwitter, to: "https://twitter.com/Vaishali_P14" },
+  // {to:"https://www.instagram.com/vaishali_p14"},
+  // {to:"https://www.instagram.com/vaishali_p14"},
+];
+
+
+export const navLink = [
+  { name: "home", to: "/" },
+  { name: "about", to: "/about" },
+  { name: "work", to: "/work" },
+  { name: "blog", to: "/blog" },
+  { name: "profile", to: "/profile" },
+  { name: "contact", to: "/contact" },
+];
+
+export const domainList = [
+  "Frontend Development",
+  "Backend Development",
+  "UI/UX",
+  "Blogging",
+];
+
+export const dummyImage = "https://assets.website-files.com/643d8b145b9de160a97cf566/644146cc0b106fd053b1b3fd_Rectangle%2041179.jpg" ;
+export const dummyImage2 = "https://assets.website-files.com/643d8b145b9de160a97cf566/64414cd179cae64ec7f55948_Group%20427319265.svg";

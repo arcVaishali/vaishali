@@ -2,14 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
+import { domainList } from "../../constants";
 const Services = () => {
-  const list = [
-    "Frontend Development",
-    "Backend Development",
-    "UI/UX",
-    "Blogging",
-  ];
+ 
   return (
     <div className="grid grid-cols-12 col-span-12 bg-black text-white p-32">
       <span
@@ -25,7 +20,7 @@ const Services = () => {
           target="_blank"
           className="flex flex-col col-span-6"
         >
-          {list.map((element, key) => (
+          {domainList.map((element, key) => (
             <span className="flex flex-row justify-between items-center border-t-[1px] border-gray-600 p-4 text-xl uppercase transition hover:scale-90 duration-1000 delay-50">
               {element}{" "}
               <FontAwesomeIcon icon={faArrowRight} className="text-gray-600" />

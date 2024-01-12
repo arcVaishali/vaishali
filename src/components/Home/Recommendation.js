@@ -1,5 +1,6 @@
 import React from "react";
-
+import { dummyImage } from "../../constants";
+import { dummyImage2 } from "../../constants";
 const Recommendation = () => {
   return (
     <div className="grid grid-cols-12 col-span-12 p-32 m-16">
@@ -12,7 +13,7 @@ const Recommendation = () => {
           className="col-span-6"
         >
           <img
-            src="https://assets.website-files.com/643d8b145b9de160a97cf566/644146cc0b106fd053b1b3fd_Rectangle%2041179.jpg"
+            src={dummyImage}
             className="w-fill h-fill"
           />
         </div>
@@ -23,7 +24,7 @@ const Recommendation = () => {
           Voluptate do aliqua aliqua duis esse nisi.Enim incididunt id sunt sit
           nisi incididunt sint mollit veniam eiusmod.Sit qui duis occaecat minim
           dolor.
-          <img src="https://assets.website-files.com/643d8b145b9de160a97cf566/64414cd179cae64ec7f55948_Group%20427319265.svg" />
+          <img src={dummyImage2} />
         </div>
       </div>
     </div>
