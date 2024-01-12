@@ -6,27 +6,10 @@ const Contact = () => {
     <div className="grid grid-cols-12 p-32 mt-8 bg-[#121212] text-white">
       <div
         data-aos="fade-up-left"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="linear"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
         className="flex flex-col text-8xl font-black justify-center items-center col-start-3 col-end-11 uppercase"
         style={{ fontFamily: "Fontsfree net xillian, sans-serif" }}
       >
-        <span
-          data-aos="fade-up-left"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="linear"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
-          className="text-center m-2"
-        >
+        <span data-aos="fade-up-left" className="text-center m-2">
           Have an Idea?
         </span>
         <Link

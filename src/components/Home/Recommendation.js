@@ -9,13 +9,6 @@ const Recommendation = () => {
       <div className="col-span-12 grid grid-cols-12 justify-center items-center">
         <div
           data-aos="fade-up-left"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="linear"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
           className="col-span-6"
         >
           <img
@@ -25,13 +18,6 @@ const Recommendation = () => {
         </div>
         <div
           data-aos="fade-in"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="linear"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
           className="col-span-6 text-sm font-extralight"
         >
           Voluptate do aliqua aliqua duis esse nisi.Enim incididunt id sunt sit

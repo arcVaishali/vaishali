@@ -1,4 +1,4 @@
-import { React , useEffect } from "react";
+import { React, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -16,8 +16,17 @@ import "aos/dist/aos.css";
 
 function App() {
   useEffect(() => {
-    AOS.init();
-    AOS.refresh();    
+    AOS.init({
+      offset: "200",
+      delay: "50",
+      duration: "1000",
+      easing: "linear",
+      mirror: "true",
+      once: "false",
+      anchorPlacement: "top-center",
+    });
+    // AOS.init();
+    AOS.refresh();
   }, []);
 
   return (

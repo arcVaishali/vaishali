@@ -18,12 +18,7 @@ const Stack = () => {
         </span>
         <span
           data-aos="fade-in"
-          data-aos-offset="10"
-          data-aos-delay="50"
-          data-aos-duration="500"
           data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
           className="text-sm col-span-6 font-light"
         >
           {" "}
