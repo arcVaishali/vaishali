@@ -46,7 +46,8 @@ function App() {
           backgroundColor: "rgb( 255 , 255 , 255)",
           mixBlendMode: "exclusion",
         }}
-        // trailingSpeed={}
+        trailingSpeed={10} // Default value
+        // to make speed of outer cursor == inner cursor, set to 1
         clickables={[
           "a",
           'input[type="text"]',
