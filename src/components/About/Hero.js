@@ -1,7 +1,11 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { animated, useSpring } from "@react-spring/web";
-import { aboutSectionImage1, aboutSectionImage2, aboutSectionImage3 } from "../../constants/imageList";
+import { a, animated, useSpring } from "@react-spring/web";
+import {
+  aboutSectionImage1,
+  aboutSectionImage2,
+  aboutSectionImage3,
+} from "../../constants/imageList";
 
 const Hero = () => {
   const names = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 0];
@@ -42,28 +46,40 @@ const Hero = () => {
           <div className="col-span-3">
             {index === 1 ? (
               <div>
-                <animated.div style={{...styleOnImage}} className="col-span-1">
+                <animated.div
+                  style={{ ...styleOnImage }}
+                  className="col-span-1"
+                >
                   <img
+                    data-aos="slide-up"
                     src={aboutSectionImage1}
                     className="w-32 h-fill"
                   />
                 </animated.div>
-                <animated.div style={{...styleOnImage}} className="relative z-10 left-32 col-span-1">
+                <animated.div
+                  style={{ ...styleOnImage }}
+                  className="relative z-10 left-32 col-span-1"
+                >
                   <img
+                    data-aos="slide-up"
                     src={aboutSectionImage2}
                     className="w-32 h-fill"
                   />
                 </animated.div>
               </div>
             ) : (
-              <img src={aboutSectionImage3} />
+              <img data-aos="zoom-in-up" src={aboutSectionImage3} />
             )}
           </div>
         ))}
       </div>
-      <Marquee className="my-32 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700 p-4">
+      <Marquee
+        data-aos="zoom-in-up"
+        className="my-32 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700 p-4"
+      >
         {names.map((element, index) => (
           <span
+            data-aos="zoom-in-up"
             className="px-8 font-light uppercase"
             style={{ fontFamily: "serif" }}
           >

@@ -40,14 +40,15 @@ function App() {
         outerAlpha={0}
         hasBlendMode={false}
         innerStyle={{
-          backgroundColor: "rgb(255 , 255 , 255)",
+          backgroundColor: "#f0f0f0",
+          mixBlendMode: "exclusion",
         }}
         outerStyle={{
           backgroundColor: "rgb( 255 , 255 , 255)",
           mixBlendMode: "exclusion",
         }}
-        trailingSpeed={10} // Default value
-        // to make speed of outer cursor == inner cursor, set to 1
+        trailingSpeed={10} // ⁡⁣⁣⁢Default value⁡
+        // ⁡⁣⁣⁢to make speed of outer cursor == inner cursor, set to 1⁡
         clickables={[
           "a",
           'input[type="text"]',

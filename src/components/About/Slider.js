@@ -17,12 +17,13 @@ const Slider = () => {
   });
   return (
     <div className="grid grid-cols-12 col-span-12 justify-center items-center px-16 py-8 my-32">
-      <animated.span
+      <span
+        data-aos="zoom-in"
         style={{ ...style1 }}
         className="col-span-12 text-6xl uppercase font-black col-start-1 text-center my-8"
       >
         What to expect from me
-      </animated.span>
+      </span>
 
       <Carousel
         additionalTransfrom={0}
@@ -52,7 +53,8 @@ const Slider = () => {
         swipeable
       >
         {SliderCardValues.map((element, index) => (
-          <animated.div
+          <div
+          data-aos="fade-up"
             className="flex flex-col bg-white p-4"
             style={{ border: "5px double gray", ...styleOnCard }}
           >
@@ -74,7 +76,7 @@ const Slider = () => {
             >
               {element.body}
             </animated.span>
-          </animated.div>
+          </div>
         ))}
       </Carousel>
     </div>

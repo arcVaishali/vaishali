@@ -25,15 +25,16 @@ const Experience = () => {
       style={{ ...style1 }}
       className="grid grid-cols-12 col-span-12 py-32 px-16 justify-center items-center bg-black text-white my-64"
     >
-      <animated.span
+      <span
+        data-aos="zoom-in"
         style={{ ...styles }}
         className="col-span-8 col-start-3 font-black uppercase text-7xl text-center"
       >
         Job Experience
-      </animated.span>
+      </span>
       <div className="grid grid-cols-12 col-span-12 m-16">
         {exp.map((element, index) => (
-          <AnimatedComponent
+          <Link
             data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
             style={{ ...style2 }}
             to="/"
@@ -52,7 +53,7 @@ const Experience = () => {
             >
               {element.post}
             </animated.span>
-          </AnimatedComponent>
+          </Link>
         ))}
       </div>
     </animated.div>

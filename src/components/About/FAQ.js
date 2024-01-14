@@ -30,14 +30,12 @@ const FAQ = () => {
       </animated.span>
       <div className="grid grid-cols-12 col-span-12 justify-between gap-16 p-8">
         <animated.span style={{ ...style1 }} className="col-span-4">
-          <img
-            src={image1}
-            className="w-fill h-fill"
-          />
+          <img data-aos="zoom-in-up" src={image1} className="w-fill h-fill" />
         </animated.span>
         <div className="flex flex-col col-span-8">
           {FAQcard.map((element, index) => (
-            <animated.div
+            <div
+            data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
               style={{ ...style1 }}
               className="border-t-[1px] border-gray-700 flex flex-col p-4"
             >
@@ -56,7 +54,7 @@ const FAQ = () => {
               ) : (
                 ""
               )}
-            </animated.div>
+            </div>
           ))}
         </div>
       </div>
