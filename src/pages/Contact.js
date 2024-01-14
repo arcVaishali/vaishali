@@ -3,10 +3,11 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="grid grid-cols-12 col-span-12 justify-center items-center p-16">
-      <span className="col-span-12 text-center text-7xl uppercase font-bold my-4">
+      <span data-aos="zoom-in"  className="col-span-12 text-center text-7xl uppercase font-bold my-4">
         Contact Me
       </span>
-      <form
+      <form 
+        data-aos="fade-in"
         className="col-span-12 grid grid-rows-1 justify-center items-center"
         action=""
         name=""

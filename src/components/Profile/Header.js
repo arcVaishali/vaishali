@@ -11,10 +11,11 @@ const Header = () => {
       <div className="grid grid-cols-10 col-span-10 col-start-2 justify-between items-center m-8">
         <span className="col-span-4 leading-7 m-4">
           <img
+            data-aos="zoom-in"
             src={Picture}
             className="col-span-2 h-[200px] w-[200px] rounded-[200px]"
           />
-          <img className="w-32" src={LogoOption} />
+          <img data-aos="fade-in" className="w-32" src={LogoOption} />
 
           <Link
             className="underline text-[12px] font-semibold text-gray-700"
@@ -25,7 +26,7 @@ const Header = () => {
         </span>
         <div className="flex justify-end items-end col-span-8 mb-2">
           {iconList.map((element, key) => (
-            <Link to={element.to}>
+            <Link data-aos="fade-in" to={element.to}>
               <FontAwesomeIcon
                 icon={element.icon}
                 color={element.color}

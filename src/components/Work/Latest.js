@@ -15,26 +15,31 @@ const Latest = () => {
   return (
     <div className="grid grid-cols-12 justify-center items-center px-16">
       <animated.span
+        data-aos="fade-in"
         style={{ ...styleX }}
         className="col-span-12 col-start-2 ml-16 text-7xl uppercase font-black p-16 m-8"
       >
         Latest Projects
       </animated.span>
-      <div className="grid grid-cols-12 col-span-12 gap-16 justify-center items-center">
+      <div className="grid grid-cols-12 col-span-12 col-start-5 gap-32 justify-center items-center">
         {ongoingProjectCard.map((element, index) => (
-          <animated.div style={{ ...styleY}} className="flex flex-col col-span-4">
-            <span className="border-l-8 border-black text-xs uppercase p-2 my-8">
+          <div
+            data-aos="zoom-in"
+            style={{ ...styleY }}
+            className="flex flex-col col-span-3"
+          >
+            <span className="border-l-8 border-black text-xs uppercase p-2 ml-[12px] my-8">
               {element.category}
             </span>
             {/* <div className="rotate-6 col-span-3"> */}
             <div className="z-8 rotate-6">
               <img src={element.image} className="w-fill h-fill" />
             </div>
-            <span className="relative -left-[20px] bg-black text-white text-l uppercase z-9 p-2 rotate-6">
+            <span className="relative -left-[15px] -top-[2px] bg-black text-white text-l uppercase z-9 p-2 rotate-6">
               {element.name}
             </span>
             {/* </div> */}
-          </animated.div>
+          </div>
         ))}
       </div>
     </div>
