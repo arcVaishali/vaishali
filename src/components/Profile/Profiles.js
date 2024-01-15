@@ -17,7 +17,8 @@ const Profiles = () => {
           </span>
           {element.lt.map((ele, key) => (
             <Link
-             data-aos={key % 2 == 0 ? "fade-right" : "fade-left"}
+             data-aos="zoom-in"
+            //  {key % 2 == 0 ? "zoom-in-right" : "zoom-in-left"}
               className="flex flex-cols justify-between items-center col-span-10 bg-gray-100 rounded-md p-8 m-2"
               to={ele.src}
             >

@@ -33,7 +33,7 @@ function App() {
     <BrowserRouter>
       <AnimatedCursor
         // color="0, 0, 0"
-        innerSize={30}
+        innerSize={0}
         outerSize={54}
         innerScale={1}
         outerScale={1.7}
