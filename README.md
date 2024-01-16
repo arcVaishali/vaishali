@@ -7,7 +7,7 @@
 
 - [ ] theme and design changes here and there. Also images and icon changes==> NO MAJOR CHANGE- 
 
-- [ ] MAKING DESIGN 100% A COPY OR EVEN BETTER OF ROBIN's WEBFLOW PORTFOLIO- https://robin-montali-portfolio-template.webflow.io/
+- [ ] Take inspo from- https://robin-montali-portfolio-template.webflow.io/
 
 - [ ] Get fonts similar to that in Robin's Portfolio
 
