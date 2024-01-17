@@ -2,13 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+@font-face {
+  font-family: 'Xillian';
+  src: url('./assets/FontsFree-Net-Xillian-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   background-color: #f0f0f0;
   margin: 0;
   /* font-family: 'Arimo', sans-serif; */
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: 'Xillian' , sans-serif;
 }
+
+
