@@ -5,8 +5,9 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 
 @font-face {
-  font-family: 'Xillian';
-  src: url('./assets/FontsFree-Net-Xillian-Regular.ttf') format('ttf');
+  font-family: "acmeregular";
+  src: local("acme"), local("Acme"),
+    url("./assets/Fonts/Acme-Regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +19,5 @@ body {
   /* font-family: "Poppins", sans-serif; */
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-family: 'Xillian' , sans-serif;
+  font-family: "acmeregular", sans-serif;
 }
-
-
