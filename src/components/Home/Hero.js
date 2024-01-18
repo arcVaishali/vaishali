@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { animated, useSpring } from "@react-spring/web";
 import Marquee from "react-fast-marquee";
+import H from "../H1";
 
 const Hero = () => {
   const names = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 0];
@@ -32,9 +33,8 @@ const Hero = () => {
         <span className="text-center font-thin text-5xl m-2">
           Hey! I am Vaishali
         </span>
-        <span className="text-center font-black text-8xl capitalize">
-          Web Developer Based in Delhi
-        </span>
+        <H text="Web Developer Based in Delhi" level="1" classN=" text-center " />
+        
       </animated.span>
 
       <animated.span
