@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'abhaya_libresemibold';
+    src: url('AbhayaLibre-SemiBold-webfont.eot');
+    src: url('AbhayaLibre-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('AbhayaLibre-SemiBold-webfont.woff2') format('woff2'),
+         url('AbhayaLibre-SemiBold-webfont.woff') format('woff'),
+         url('AbhayaLibre-SemiBold-webfont.ttf') format('truetype'),
+         url('AbhayaLibre-SemiBold-webfont.svg#abhaya_libresemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

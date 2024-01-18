@@ -32,7 +32,7 @@ const Hero = () => {
         <span className="text-center font-thin text-5xl m-2">
           Hey! I am Vaishali
         </span>
-        <span className="col-span-12 text-center font-black text-8xl capitalize">
+        <span className="text-center font-black text-8xl capitalize">
           Web Developer Based in Delhi
         </span>
       </animated.span>

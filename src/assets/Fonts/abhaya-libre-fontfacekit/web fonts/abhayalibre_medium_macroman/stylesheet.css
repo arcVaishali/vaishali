@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'abhaya_libremedium';
+    src: url('AbhayaLibre-Medium-webfont.eot');
+    src: url('AbhayaLibre-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('AbhayaLibre-Medium-webfont.woff2') format('woff2'),
+         url('AbhayaLibre-Medium-webfont.woff') format('woff'),
+         url('AbhayaLibre-Medium-webfont.ttf') format('truetype'),
+         url('AbhayaLibre-Medium-webfont.svg#abhaya_libremedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

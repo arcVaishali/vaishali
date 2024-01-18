@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @font-face {
   font-family: "acmeregular";
   src: local("acme"), local("Acme"),
-    url("./assets/Fonts/Acme-Regular-webfont.woff") format("woff");
+    url("./assets/Fonts/abhaya-libre-fontfacekit/web\ fonts/abhayalibre_regular_macroman/AbhayaLibre-Regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,8 +16,8 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   /* font-family: 'Arimo', sans-serif; */
-  /* font-family: "Poppins", sans-serif; */
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-family: "acmeregular", sans-serif;
+  /* font-family: "acmeregular", sans-serif; */
 }
