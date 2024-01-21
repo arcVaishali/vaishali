@@ -20,7 +20,7 @@ const Project = () => {
             className="flex flex-col col-span-6"
             // onMouseOver={() => handle()}
           >
-            <img src={element.src} className="h-80" />
+            <img src={element.src} className="h-[500px]" />
 
             <span className="text-black font-extralight text-sm p-4">
               {element.body}

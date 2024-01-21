@@ -1,8 +1,9 @@
 import ProjectImage from "../assets/project_image.png";
-import ReliefConnect from "../assets/ReliefConnect.png";
-import EmbraceAutism from "../assets/EmbraceAutism.png";
-import MigrantMingle from "../assets/MigrantMingle.png";
-import RaiseWaves from "../assets/RaiseWaves.png";
+import ReliefConnect from "../assets/ReliefConnectAlternative.jpg";
+import EmbraceAutism from "../assets/EmbraceAutism.jpg";
+import MigrantMingle from "../assets/MigrantMingleAlternativeImage.jpg";
+import RaiseWaves from "../assets/RaisewavesAlternative.jpg";
+import BlogThumb from "../assets/BlogImageAlternative.jpg"
 import {
   faInstagram,
   faLinkedin,
@@ -166,12 +167,12 @@ export const projectList = [
 export const blogData = [
   {
     to: "https://vaishalionlc.hashnode.dev/leetcode-2653-sliding-subarray-beauty",
-    src: "https://cdn.hashnode.com/res/hashnode/image/upload/v1680529848031/c021c599-1102-46b6-a620-503ff68f0a20.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    src: BlogThumb,
     text: "Leetcode #2653 Sliding Subarray Beauty",
   },
   {
     to: "https://vaishalionlc.hashnode.dev/leetcode-881-boats-to-save-people",
-    src: "https://cdn.hashnode.com/res/hashnode/image/upload/v1680529848031/c021c599-1102-46b6-a620-503ff68f0a20.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    src: BlogThumb,
     text: "Leetcode #881: Boats to Save People",
   },
 ];
