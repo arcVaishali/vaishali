@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div>
       {showMenu === false ? (
-        <div className="grid grid-cols-12 md:w-[30vw] max-[600px]:mr-16 max-[600px]:-ml-16 w-[100vw] gap-16 justify-between items-center p-4 bg-[#f0f0f0]">
+        <div className="grid grid-cols-12 max-[600px]:mr-16 max-[600px]:-ml-16 w-[100vw] gap-16 justify-between items-center p-4 bg-[#f0f0f0]">
           <animated.div
             style={{ ...spring }}
             className="grid grid-cols-5 col-span-6"
@@ -30,7 +30,7 @@ const Navbar = () => {
           </animated.div>
           <animated.div
             style={{ ...spring }}
-            className="min-[200px]:hidden max-[900px]:hidden lg:flex lg:col-span-6 lg:gap-8"
+            className="min-[200px]:hidden max-[900px]:hidden lg:flex lg:col-span-6 lg:gap-8 xl:ml-64"
           >
             {navLink.map((element) => (
               <Link
@@ -48,10 +48,10 @@ const Navbar = () => {
           </animated.div>
           <animated.div
             style={{ ...spring }}
-            className="max-[600px]:flex col-span-1 justify-end max-[600px]:ml-[450px] md:hidden lg:hidden"
+            className="max-[1023px]:flex max-[1023px]:col-span-1 max-[1023px]:justify-end max-[1023px]:col-start-10 min-[1024px]:hidden"
           >
             <FontAwesomeIcon
-              className="text-4xl"
+              className="text-4xl cursor-pointer"
               icon={faHamburger}
               onClick={() => setShowMenu(true)}
             />
