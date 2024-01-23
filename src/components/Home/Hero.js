@@ -30,22 +30,25 @@ const Hero = () => {
         style={{ ...spring }}
         className="flex flex-col col-span-12 col-start-2 col-end-12 text-center font-black text-7xl mt-32"
       >
-        <span className="text-center font-thin text-5xl m-2">
+        <span className="text-center font-thin min-[602px]:text-5xl max-[2000px]:text-5xl min-[200px]:text-xl max-[914px]:text-xl m-2">
           Hey! I am Vaishali
         </span>
-        <H text="Web Developer Based in Delhi" level="1" classN=" text-center " />
-
+        <H
+          text="Web Developer Based in Delhi"
+          level="1"
+          classN=" text-center min-[602px]:text-8xl max-[900px]:text-4xl "
+        />
       </animated.span>
 
       <animated.span
         style={{ ...spring2 }}
-        className="col-span-8 col-start-4 col-end-10 text-center text-sm m-2"
+        className="min-[200px]:hidden max-[1023px]:hidden min-[1024px]:flex min-[1024px]:col-span-8 min-[1024px]:col-start-4 min-[1024px]:col-end-10 min-[1024px]:text-center min-[1024px]:text-sm min-[1024px]:m-2"
       >
         Quis culpa culpa Lorem velit dolore.Esse elit irure minim ad est
         incididunt commodo eu nulla tempor labore dolor.
       </animated.span>
 
-      <button className="col-span-4 col-start-6 col-end-8 bg-black text-white border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 m-2">
+      <button className="min-[200px]:w-[150px] max-[1023px]:w-[150px] min-[200px]:text-sm max-[1023px]:text-sm min-[1024px]:col-span-4 col-start-3 col-end-6 bg-black text-white border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 m-8">
         Book a free call
       </button>
       {initial ? (
