@@ -11,9 +11,8 @@ const H = (props) => {
     if ( props.classN === undefined ) {
         props.classN = "" ;
     }
-    const l = props.level ;
   return (
-    <div className={'font-black text-8xl capitalize' + props.classN} style={{ fontFamily : object.l}}>
+    <div className={'font-black capitalize' + props.classN}>
         {props.text}
     </div>
   )

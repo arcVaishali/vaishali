@@ -30,13 +30,13 @@ const Hero = () => {
         style={{ ...spring }}
         className="flex flex-col col-span-12 col-start-2 col-end-12 text-center font-black text-7xl mt-32"
       >
-        <span className="text-center font-thin min-[602px]:text-5xl max-[2000px]:text-5xl min-[200px]:text-xl max-[914px]:text-xl m-2">
+        <span className="text-center font-thin text-xl lg:text-5xl m-2">
           Hey! I am Vaishali
         </span>
         <H
           text="Web Developer Based in Delhi"
           level="1"
-          classN=" text-center min-[602px]:text-8xl max-[900px]:text-4xl "
+          classN=" text-center text-4xl lg:text-8xl "
         />
       </animated.span>
 
