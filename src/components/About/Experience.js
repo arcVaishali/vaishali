@@ -8,9 +8,6 @@ const Experience = () => {
     from: { x: -50, opacity: 0 },
     to: { x: 0, opacity: 1 },
   });
-  const style1 = useSpring({
-    from: { padding: "8rem" },
-  });
   const style2 = useSpring({
     from: { y: -100, opacity: 0 },
     to: { y: 0, opacity: 1 },
@@ -22,37 +19,36 @@ const Experience = () => {
   const AnimatedComponent = animated(Link);
   return (
     <animated.div
-      style={{ ...style1 }}
-      className="grid grid-cols-12 col-span-12 py-32 px-16 justify-center items-center bg-black text-white my-64"
+      className="grid grid-cols-12 col-span-12 p-16 lg:py-32 lg:px-16 justify-center items-center bg-black text-white my-64"
     >
       <span
         data-aos="zoom-in"
         style={{ ...styles }}
-        className="col-span-8 col-start-3 font-black uppercase text-7xl text-center"
+        className="col-span-8 lg:col-start-3 font-black uppercase text-4xl lg:text-7xl text-center"
       >
         Job Experience
       </span>
-      <div className="grid grid-cols-12 col-span-12 m-16">
+      <div className="grid lg:grid-cols-12 col-span-12 lg:m-16">
         {exp.map((element, index) => (
           <Link
             data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
             style={{ ...style2 }}
             to="/"
-            className="flex col-span-12 justify-between items-center border-t-[1px] border-gray-700 p-[20px] transition hover:scale-90 delay-150 duration-1000 cursor-pointer"
+            className="flex-rows justify-center lg:flex col-span-12 lg:justify-between items-center border-t-[1px] border-gray-700 p-[20px] transition hover:scale-90 delay-150 duration-1000 cursor-pointer"
           >
             <animated.span
               style={{ ...styleOnContent }}
-              className="uppercase font-semibold text-xl"
+              className="uppercase font-semibold text-lg lg:text-xl"
             >
               {element.name}
             </animated.span>
 
-            <animated.span
+            <animated.div
               style={{ ...styleOnContent }}
-              className="uppercase font-semibold text-sm"
+              className="uppercase font-semibold text-xs lg:text-sm"
             >
               {element.post}
-            </animated.span>
+            </animated.div>
           </Link>
         ))}
       </div>

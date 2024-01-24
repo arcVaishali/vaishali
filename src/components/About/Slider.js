@@ -16,11 +16,11 @@ const Slider = () => {
     to: { opacity: 1 },
   });
   return (
-    <div className="grid grid-cols-12 col-span-12 justify-center items-center px-16 py-8 my-32">
+    <div className="grid grid-cols-12 col-span-12 justify-center items-center p-8 lg:px-16 lg:py-8 my-16 lg:my-32">
       <span
         data-aos="zoom-in"
         style={{ ...style1 }}
-        className="col-span-12 text-6xl uppercase font-black col-start-1 text-center my-8"
+        className="col-span-12 text-4xl lg:text-6xl uppercase font-black col-start-1 text-center my-8"
       >
         What to expect from me
       </span>

@@ -21,18 +21,18 @@ const FAQ = () => {
     to: { x: 0, opacity: 1 },
   });
   return (
-    <div className="grid grid-cols-12 col-span-12 py-16 px-32 m-4 justify-center items-center mb-64">
+    <div className="grid grid-cols-12 col-span-12 lg:py-16 lg:px-32 m-4 justify-center items-center mb-64">
       <animated.span
         style={{ ...style1 }}
-        className="col-span-12 text-7xl uppercase font-black text-center m-4"
+        className="col-span-12 text-4xl lg:text-7xl uppercase font-black text-center m-4"
       >
         FAQs
       </animated.span>
-      <div className="grid grid-cols-12 col-span-12 justify-between gap-16 p-8">
-        <animated.span style={{ ...style1 }} className="col-span-4">
+      <div className="grid justify-center lg:grid-cols-12 col-span-12 lg:justify-between gap-16 p-8">
+        <animated.span style={{ ...style1 }} className="col-span-4 col-start-2 lg:col-start-1">
           <img data-aos="zoom-in-up" src={image1} className="w-fill h-fill" />
         </animated.span>
-        <div className="flex flex-col col-span-8">
+        <div className="flex flex-col col-span-6 lg:col-span-8">
           {FAQcard.map((element, index) => (
             <div
             data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}

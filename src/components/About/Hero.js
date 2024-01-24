@@ -24,24 +24,23 @@ const Hero = () => {
     to: { y: 0 },
   });
   return (
-    <div className="grid grid-cols-12 justify-center items-center pt-32 pl-32 pr-32 pb-8 mb-16">
+    <div className="grid grid-cols-12 justify-center items-center p-16 m-2 lg:pt-32 lg:pl-32 lg:pr-32 lg:pb-8 lg:mb-16">
       <div className="grid grid-cols-6 col-span-12 justify-center items-center">
         <animated.div
           style={{ ...styleOnHeader }}
-          className="col-span-6 text-7xl text-center uppercase font-black p-2"
+          className="text-4xl col-span-12 lg:col-span-6 text-center uppercase font-black p-2 lg:text-7xl"
         >
-          {" "}
           i focus on both design and development
         </animated.div>
         <animated.div
           style={{ ...styleOnSubHeader }}
-          className="col-start-2 col-span-4 text-center text-sm font-extralight p-2"
+          className="col-start-2 col-span-4 text-center text-sm font-extralight p-2 hidden lg:flex"
         >
           Bring to the table win-win survival strategies to ensure proactive
           domination. At the end of the day, going forward, a new.
         </animated.div>
       </div>
-      <div className="col-span-12 grid grid-cols-12 justify-center items-center p-8 gap-8">
+      <div className="col-start-3 lg:col-start-1 col-span-12 grid grid-cols-12 justify-center items-center p-8 gap-8">
         {imgg.map((element, index) => (
           <div className="col-span-3">
             {index === 1 ? (
@@ -53,12 +52,12 @@ const Hero = () => {
                   <img
                     data-aos="slide-up"
                     src={aboutSectionImage1}
-                    className="w-32 h-fill"
+                    className="w-64 h-fill"
                   />
                 </animated.div>
                 <animated.div
                   style={{ ...styleOnImage }}
-                  className="relative z-10 left-32 col-span-1"
+                  className="relative z-10 left-8 lg:left-32 col-span-1"
                 >
                   <img
                     data-aos="slide-up"
@@ -73,7 +72,7 @@ const Hero = () => {
           </div>
         ))}
       </div>
-      <Marquee
+      {/* <Marquee
         data-aos="zoom-in-up"
         className="my-32 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700 p-4"
       >
@@ -86,7 +85,7 @@ const Hero = () => {
             Linkedin
           </span>
         ))}
-      </Marquee>
+      </Marquee> */}
     </div>
   );
 };
