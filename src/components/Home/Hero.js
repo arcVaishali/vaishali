@@ -25,7 +25,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-12 justify-center items-center">
+    <div className="grid grid-cols-12 col-span-12 justify-center items-center">
       <animated.span
         style={{ ...spring }}
         className="flex flex-col col-span-12 col-start-2 col-end-12 text-center font-black text-7xl mt-32"
@@ -48,7 +48,7 @@ const Hero = () => {
         incididunt commodo eu nulla tempor labore dolor.
       </animated.span>
 
-      <button className="min-[200px]:w-[150px] max-[1023px]:w-[150px] min-[200px]:text-sm max-[1023px]:text-sm min-[1024px]:col-span-4 col-start-3 col-end-6 bg-black text-white border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 m-8">
+      <button className="w-[150px] text-sm min-[200px]:col-start-5 max-[400px]:col-start-5 min-[400px]:col-start-5 max-[586px]:col-start-5 min-[1000px]:col-start-6 max-[2000px]:col-start-6 bg-black text-white border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 m-8">
         Book a free call
       </button>
       {initial ? (
