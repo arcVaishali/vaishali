@@ -2,20 +2,20 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="grid grid-cols-12 col-span-12 justify-center items-center p-16">
-      <span data-aos="zoom-in"  className="col-span-12 text-center text-7xl uppercase font-bold my-4">
+    <div className="grid lg:grid-cols-12 col-span-12 justify-center items-center p-16">
+      <span data-aos="zoom-in"  className="col-span-12 text-center text-4xl lg:text-7xl uppercase font-bold my-4">
         Contact Me
       </span>
       <form 
         data-aos="fade-in"
-        className="col-span-12 grid grid-rows-1 justify-center items-center"
+        className="col-span-12 grid grid-rows-1 col-start-7 justify-center items-center w-[20px]"
         action=""
         name=""
         method="POST"
         noValidate
         autoComplete="true"
       >
-        <div className="grid grid-rows-1 my-4 w-[600px]">
+        <div className="grid grid-rows-1 my-4 w-[300px] lg:w-[600px]">
           <label className="text-[10px] uppercase font-semibold" for="name">
             Your Name
           </label>
@@ -62,7 +62,7 @@ const Contact = () => {
           />
         </div>
 
-        <button className="grid cols-span-8 w-[600px] rounded-full bg-black text-white hover:bg-white hover:text-black border-2 border-black p-4 my-4">Send</button>
+        <button className="grid cols-span-8 w-[300px] lg:w-[600px] rounded-full bg-black text-white hover:bg-white hover:text-black border-2 border-black p-4 my-4">Send</button>
       </form>
     </div>
   );
