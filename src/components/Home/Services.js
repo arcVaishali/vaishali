@@ -6,7 +6,7 @@ import { domainList } from "../../constants";
 const Services = () => {
  
   return (
-    <div className="grid grid-cols-12 col-span-12 bg-black text-white p-32">
+    <div className="md:grid md:p-16 lg:grid grid-cols-12 bg-black text-white lg:p-32">
       <span
         data-aos="fade-in"
         data-aos-easing="ease-in-out"
@@ -14,7 +14,7 @@ const Services = () => {
       >
         Services
       </span>
-      <div className="grid grid-cols-12 col-span-12 justify-between item-center gap-16">
+      <div className="md:grid md:p-8 lg:grid lg:grid-cols-12 col-span-12 justify-between item-center gap-16">
         <Link
           to="https://www.fiverr.com/vaishali_p14?up_rollout=true"
           target="_blank"
