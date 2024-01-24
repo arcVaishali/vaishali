@@ -11,7 +11,7 @@ const Stack = () => {
   }));
   const list = [];
   return (
-    <div className="md:grid lg:grid lg:grid-cols-12 col-span-12 justify-between items-center gap-8 mt-64 mb-64 mr-16 ml-16">
+    <div className="md:grid lg:grid lg:grid-cols-12 col-span-12 justify-between items-center gap-8 m-16 lg:mt-64 lg:mb-64 lg:mr-16 lg:ml-16">
       <div className="md:grid md:col-span-7 lg:grid lg:grid-cols-8 lg:col-span-7">
         <span className="text-4xl lg:text-7xl col-span-6 font-black uppercase">
           Tech Stack
