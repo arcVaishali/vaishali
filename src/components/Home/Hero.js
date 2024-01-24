@@ -42,13 +42,13 @@ const Hero = () => {
 
       <animated.span
         style={{ ...spring2 }}
-        className="min-[200px]:hidden max-[1023px]:hidden min-[1024px]:flex min-[1024px]:col-span-8 min-[1024px]:col-start-4 min-[1024px]:col-end-10 min-[1024px]:text-center min-[1024px]:text-sm min-[1024px]:m-2"
+        className="hidden lg:flex col-span-8 col-start-4 col-end-10 text-center text-sm m-2"
       >
         Quis culpa culpa Lorem velit dolore.Esse elit irure minim ad est
         incididunt commodo eu nulla tempor labore dolor.
       </animated.span>
 
-      <button className="w-[150px] text-sm min-[200px]:col-start-5 max-[400px]:col-start-5 min-[400px]:col-start-5 max-[586px]:col-start-5 min-[1000px]:col-start-6 max-[2000px]:col-start-6 bg-black text-white border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 m-8">
+      <button className="w-[150px] text-sm col-start-4 my-8 ml-4 lg:col-start-6 bg-black text-white border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 lg:my-8 lg:mx-8">
         Book a free call
       </button>
       {initial ? (
@@ -58,7 +58,7 @@ const Hero = () => {
           ))}
         </div>
       ) : (
-        <Marquee className="mt-64 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700  p-4">
+        <Marquee className="mt-64 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700 py-4">
           {names.map((element, index) => (
             <span
               className="px-8 font-light uppercase"
