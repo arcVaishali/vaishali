@@ -48,7 +48,7 @@ const Navbar = () => {
           </animated.div>
           <animated.div
             style={{ ...spring }}
-            className="relative right-32 max-[1023px]:flex max-[1023px]:col-span-1 max-[1023px]:justify-end max-[1023px]:col-start-10 min-[1024px]:hidden"
+            className="flex col-span-1 justify-end col-start-9 lg:hidden"
           >
             <FontAwesomeIcon
               className="text-4xl cursor-pointer"
