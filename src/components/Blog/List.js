@@ -4,7 +4,7 @@ import { blogData } from "../../constants";
 
 const List = () => {
   return (
-    <div className="grid grid-cols-12 col-span-12 justify-center items-center gap-8 p-4">
+    <div className="grid lg:grid-cols-12 col-span-12 justify-center items-center gap-8 p-4">
       {blogData.map((element, index) => (
         <Link
           data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
