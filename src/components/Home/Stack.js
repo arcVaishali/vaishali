@@ -13,7 +13,7 @@ const Stack = () => {
   return (
     <div className="md:grid lg:grid lg:grid-cols-12 col-span-12 justify-between items-center gap-8 mt-64 mb-64 mr-16 ml-16">
       <div className="md:grid md:col-span-7 lg:grid lg:grid-cols-8 lg:col-span-7">
-        <span className="text-7xl col-span-6 font-black uppercase">
+        <span className="text-4xl lg:text-7xl col-span-6 font-black uppercase">
           Tech Stack
         </span>
         <div
