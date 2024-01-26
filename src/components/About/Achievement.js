@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
-import { card } from "../../constants/index";
+import { card1 , card2 } from "../../constants/index";
 import { animated, useSpring } from "@react-spring/web";
 
 const Achievement = () => {
@@ -26,7 +26,7 @@ const Achievement = () => {
           style={{ ...styles }}
           className="col-span-10 font-black text-4xl lg:text-7xl uppercase"
         >
-          <span className="hidden lg:inline">My</span> 
+          <span className="hidden lg:inline">My</span>
           Achievements
         </animated.span>
         <animated.button
@@ -43,26 +43,47 @@ const Achievement = () => {
             data-aos-easing="ease-in-out"
             className="grid lg:grid-cols-12 col-span-6 gap-8"
           >
-            {card.map((element, index) => (
-              <animated.div
-                style={{ ...style3 }}
-                data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
-                data-aos-easing="ease-in-out"
-                className="flex col-span-6 justify-between items-center border-t-[1px] border-black p-4"
-              >
-                <span className="uppercase">{element.title}</span>
-                <button className="border-[1px] border-black rounded-full p-2">
-                  {element.tag}
-                </button>
-                <FontAwesomeIcon
-                  icon={faArrowAltCircleRight}
-                  className="cursor-pointer"
-                  size="xl"
-                  swapOpacity
-                  transform={{ rotate: 315 }}
-                />
-              </animated.div>
-            ))}
+            {idx === 1
+              ? card1.map((element, index) => (
+                  <animated.div
+                    style={{ ...style3 }}
+                    data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
+                    data-aos-easing="ease-in-out"
+                    className="flex col-span-6 justify-between items-center border-t-[1px] border-black p-4"
+                  >
+                    <span className="uppercase">{element.title}</span>
+                    <button className="border-[1px] border-black rounded-full p-2">
+                      {element.tag}
+                    </button>
+                    <FontAwesomeIcon
+                      icon={faArrowAltCircleRight}
+                      className="cursor-pointer"
+                      size="xl"
+                      swapOpacity
+                      transform={{ rotate: 315 }}
+                    />
+                  </animated.div>
+                ))
+              : card2.map((element, index) => (
+                  <animated.div
+                    style={{ ...style3 }}
+                    data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
+                    data-aos-easing="ease-in-out"
+                    className="lg:flex col-span-6 justify-between items-center border-t-[1px] border-black p-4 hidden"
+                  >
+                    <span className="uppercase">{element.title}</span>
+                    <button className="border-[1px] border-black rounded-full p-2">
+                      {element.tag}
+                    </button>
+                    <FontAwesomeIcon
+                      icon={faArrowAltCircleRight}
+                      className="cursor-pointer"
+                      size="xl"
+                      swapOpacity
+                      transform={{ rotate: 315 }}
+                    />
+                  </animated.div>
+                ))}
           </div>
         ))}
       </div>

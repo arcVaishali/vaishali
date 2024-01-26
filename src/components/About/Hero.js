@@ -26,12 +26,12 @@ const Hero = () => {
   return (
     <div className="grid grid-cols-12 justify-center items-center p-16 m-2 lg:pt-32 lg:pl-32 lg:pr-32 lg:pb-8 lg:mb-16">
       <div className="grid grid-cols-6 col-span-12 justify-center items-center">
-        <animated.div
+        <animated.span
           style={{ ...styleOnHeader }}
-          className="text-4xl col-span-12 lg:col-span-6 text-center uppercase font-black p-2 lg:text-7xl"
+          className="text-4xl text-center lg:col-span-6 uppercase font-black p-2 lg:text-7xl"
         >
-          i focus on both design and development
-        </animated.div>
+          i focus on design development problem solving
+        </animated.span>
         <animated.div
           style={{ ...styleOnSubHeader }}
           className="col-start-2 col-span-4 text-center text-sm font-extralight p-2 hidden lg:flex"
@@ -40,7 +40,7 @@ const Hero = () => {
           domination. At the end of the day, going forward, a new.
         </animated.div>
       </div>
-      <div className="col-start-3 lg:col-start-1 col-span-12 grid grid-cols-12 justify-center items-center p-8 gap-8">
+      <div className="lg:col-start-1 col-span-12 grid grid-cols-12 justify-center items-center p-8 gap-8">
         {imgg.map((element, index) => (
           <div className="col-span-3">
             {index === 1 ? (
@@ -67,7 +67,7 @@ const Hero = () => {
                 </animated.div>
               </div>
             ) : (
-              <img data-aos="zoom-in-up" src={aboutSectionImage3} />
+              <img className="hidden lg:inline" data-aos="zoom-in-up" src={aboutSectionImage3} />
             )}
           </div>
         ))}

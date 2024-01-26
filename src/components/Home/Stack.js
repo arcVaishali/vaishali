@@ -19,10 +19,9 @@ const Stack = () => {
         <div
           data-aos="fade-in"
           data-aos-easing="ease-in-out"
-          className="text-sm col-span-6 font-light"
+          className="text-sm col-span-6 font-light ml-2"
         >
-          Labore et dolor consequat ea velit. t dolor consequat ea velit. t
-          dolor consequat ea velit.
+          I'm a passionate tech enthusiast with a proven proficiency in 
         </div>
       </div>
       <div
