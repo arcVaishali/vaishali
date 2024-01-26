@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div className="grid w-[550px] lg:w-screen grid-cols-12 p-16 lg:p-32 mt-8 bg-[#121212] text-white">
+    <div className="grid w-screen grid-cols-12 p-16 lg:p-32 mt-8 bg-[#121212] text-white">
       <div
         data-aos="fade-up-left"
         className="flex flex-col text-4xl lg:text-8xl font-black justify-center items-center col-start-3 col-end-11 uppercase"

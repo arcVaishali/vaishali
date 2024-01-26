@@ -25,7 +25,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="w-[500px] lg:w-screen grid grid-cols-12 col-span-12 justify-center items-center">
+    <div className="w-screen grid grid-cols-12 col-span-12 justify-center items-center">
       <animated.span
         style={{ ...spring }}
         className="flex flex-col col-span-12 col-start-3 lg:col-start-2 col-end-12 text-center font-black text-7xl mt-32 -ml-8 lg:ml-0"

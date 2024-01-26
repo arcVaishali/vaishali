@@ -6,7 +6,7 @@ import { domainList } from "../../constants";
 const Services = () => {
  
   return (
-    <div className="grid w-[550px] lg:w-screen px-8 py-32 lg:grid-cols-12 bg-black text-white lg:p-32">
+    <div className="grid w-screen px-8 py-32 lg:grid-cols-12 bg-black text-white lg:p-32">
       <span
         data-aos="fade-in"
         data-aos-easing="ease-in-out"

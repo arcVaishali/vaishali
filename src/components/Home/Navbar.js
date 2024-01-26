@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div>
       {showMenu === false ? (
-        <div className="grid grid-cols-12 w-[500px] lg:w-screen gap-16 justify-between items-center p-4 bg-[#f0f0f0]">
+        <div className="grid grid-cols-12 w-screen gap-16 justify-between items-center p-4 bg-[#f0f0f0]">
           <animated.div
             style={{ ...spring }}
             className="grid grid-cols-5 col-span-6"
