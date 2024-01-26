@@ -11,16 +11,16 @@ const List = () => {
           data-aos-offset="200"
           to={element.to}
           target="_blank"
-          className="col-span-6 p-4"
+          className="col-span-6 lg:p-4"
         >
           <div>
             <img src={element.src} className="h-fill w-fill" />
           </div>
-          <div className="text-base font-extralight p-2">{element.text}</div>
+          <div className="text-base font-extralight lg:p-2">{element.text}</div>
           <Link
             to={element.to}
             target="_blank"
-            className="bg-transparent text-black underline p-2"
+            className="bg-transparent text-black underline lg:p-2"
           >
             Read more
           </Link>

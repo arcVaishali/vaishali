@@ -25,10 +25,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-12 col-span-12 justify-center items-center">
+    <div className="w-[500px] lg:w-screen grid grid-cols-12 col-span-12 justify-center items-center">
       <animated.span
         style={{ ...spring }}
-        className="flex flex-col col-span-12 col-start-2 col-end-12 text-center font-black text-7xl mt-32"
+        className="flex flex-col col-span-12 col-start-3 lg:col-start-2 col-end-12 text-center font-black text-7xl mt-32 -ml-8 lg:ml-0"
       >
         <span className="text-center font-thin text-xl lg:text-5xl m-2">
           Hey! I am Vaishali
@@ -48,7 +48,7 @@ const Hero = () => {
         incididunt commodo eu nulla tempor labore dolor.
       </animated.span>
 
-      <button className="w-[150px] text-sm col-start-4 my-8 ml-4 lg:col-start-6 bg-black text-white border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 lg:my-8 lg:mx-8">
+      <button className="w-[150px] text-sm col-start-5 my-8 ml-2 lg:col-start-6 bg-black text-white border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 lg:my-8 lg:mx-8">
         Book a free call
       </button>
       {initial ? (
@@ -58,13 +58,13 @@ const Hero = () => {
           ))}
         </div>
       ) : (
-        <Marquee className="mt-64 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700 py-4">
+        <Marquee className="mt-64 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700 py-4 ml-8 lg:ml-0">
           {names.map((element, index) => (
             <span
               className="px-8 font-light uppercase"
               style={{ fontFamily: "serif" }}
             >
-              Linkedin
+              vadore
             </span>
           ))}
         </Marquee>
