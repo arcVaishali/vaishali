@@ -3,28 +3,38 @@ import ReliefConnect from "../assets/ReliefConnectAlternative.jpg";
 import EmbraceAutism from "../assets/EmbraceAutism.jpg";
 import MigrantMingle from "../assets/MigrantMingleAlternativeImage.jpg";
 import RaiseWaves from "../assets/RaisewavesAlternative.jpg";
-import BlogThumb from "../assets/BlogImageAlternative.jpg"
+import BlogThumb from "../assets/BlogImageAlternative.jpg";
 import {
   faInstagram,
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
+export const recommendationList1 = [
+  "Arr avast broadside run a shot across the bow belay chase guns grog blossom main sheet wherry. Careen jury mast code of conduct log scuttle six pounders measured fer yer chains. Galleon quarterdeck handsomely yardarm walk the plank bounty scuttle brigantine jib. Pirate maroon hang the jib case shot grog blossom league jury mast knave. Avast bring a spring upon her cable.",
+
+  "Officia veniam exercitation exercitation magna aliqua eiusmod consectetur quis.Minim magna deserunt pariatur duis minim reprehenderit.Nostrud non non irure et officia aliqua aute.Ut eu esse labore dolor sit irure nisi.Ad elit occaecat tempor labore pariatur.",
+
+  "Bacon ipsum dolor amet drumstick ground round porchetta short ribs venison spare ribs kielbasa sausage pancetta. Ham hock cupim capicola, pork belly kevin beef ribs swine burgdoggen meatball tail. Landjaeger alcatra pork loin porchetta buffalo. Drumstick short loin jowl prosciutto, shoulder landjaeger kevin boudin bacon capicola corned beef sausage.",
+  
+  "Cupcake ipsum dolor sit amet chocolate bar. Jelly beans chupa chups caramels icing cookie. Tiramisu sweet roll lollipop wafer chocolate bar chocolate cake. Bonbon pastry gummi bears chocolate. Oat cake macaroon carrot cake toffee cake sugar plum. Tootsie roll brownie macaroon donut candy canes jelly beans.",
+];
+
 export const exp = [
   {
     name: "Frontend Developer",
     post: "Cats In Tech",
-    tenure:"Oct 2023 - Present"
+    tenure: "Oct 2023 - Present",
   },
   {
     name: "Web Developer",
     post: "Code Clause",
-    tenure:"May 2023 - June-2023"
+    tenure: "May 2023 - June-2023",
   },
   {
     name: "Open Source Contributor",
     post: "GSosC'23",
-    tenure:"May 2023 - Aug 2023"
+    tenure: "May 2023 - Aug 2023",
   },
   // {
   //   name: "Developer",
@@ -215,7 +225,6 @@ export const socials = [
   // {to:"https://www.instagram.com/vaishali_p14"},
 ];
 
-
 export const navLink = [
   { name: "home", to: "/" },
   { name: "about", to: "/about" },
@@ -233,5 +242,5 @@ export const domainList = [
 ];
 
 export const recommendationList = [
-  "Voluptate do aliqua aliqua duis esse nisi.Enim incididunt id sunt sit nisi incididunt sint mollit veniam eiusmod.Sit qui duis occaecat minim dolor."
-]
+  "Voluptate do aliqua aliqua duis esse nisi.Enim incididunt id sunt sit nisi incididunt sint mollit veniam eiusmod.Sit qui duis occaecat minim dolor.",
+];
