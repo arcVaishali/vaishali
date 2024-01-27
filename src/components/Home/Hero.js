@@ -29,7 +29,7 @@ const Hero = () => {
     <div className="grid grid-cols-12 col-span-12 justify-center items-center">
       <animated.span
         style={{ ...spring }}
-        className="grid grid-rows-1 col-span-12 lg:col-start-2 lg:col-end-12 text-center font-black text-7xl mt-32 lg:ml-0"
+        className="grid grid-rows-1 col-span-12 col-start-3 col-end-11 lg:col-start-2 lg:col-end-12 text-center font-black text-7xl mt-32 lg:ml-0"
       >
         <span className="text-center font-thin text-xl lg:text-5xl m-2">
           Hey! I am Vaishali

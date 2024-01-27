@@ -6,7 +6,7 @@ const Project = () => {
   function handle() {}
   return (
     <div className="grid grid-cols-12 col-span-12 justify-center items-center m-32 gap-8">
-      <span className="lg:col-start-2 lg:ml-16 lg:col-end-12 text-4xl lg:text-6xl font-black uppercase mb-8">
+      <span className="lg:col-start-2 col-start-3 lg:ml-16 lg:col-end-12 text-4xl lg:text-6xl font-black uppercase mb-8">
         <span className="hidden lg:inline">Featured</span> Projects
       </span>
 
