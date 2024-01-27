@@ -25,16 +25,19 @@ export const exp = [
     name: "Frontend Developer",
     post: "Cats In Tech",
     tenure: "Oct 2023 - Present",
+    description: "This is the description of the job1",
   },
   {
     name: "Web Developer",
     post: "Code Clause",
     tenure: "May 2023 - June-2023",
+    description: "This is the description of the job2",
   },
   {
     name: "Open Source Contributor",
     post: "GSosC'23",
     tenure: "May 2023 - Aug 2023",
+    description: "This is the description of the job3",
   },
   // {
   //   name: "Developer",
@@ -168,19 +171,22 @@ export const ongoingProjectCard = [
     category: "Development",
     image:
       "https://assets.website-files.com/64400efa17592edf6ae1a250/64e6f35a2dd4319151e11b5e_Rectangle%2041170-p-500.png",
-    name: "MediCare",
+    name: "Medi Care",
+    to:"https://devpost.com/software/lovers-oi84b5",
   },
   {
     category: "Development",
     image:
       "https://assets.website-files.com/64400efa17592edf6ae1a250/64e6f35a2dd4319151e11b5e_Rectangle%2041170-p-500.png",
-    name: "MediCare",
+    name: "Relief Connect",
+    to:"https://devpost.com/software/relief-connect",  
   },
   {
     category: "Development",
     image:
       "https://assets.website-files.com/64400efa17592edf6ae1a250/64e6f35a2dd4319151e11b5e_Rectangle%2041170-p-500.png",
-    name: "MediCare",
+    name: "Embrace Autism",
+    to  :"https://devpost.com/software/embrace-autism",
   },
 ];
 

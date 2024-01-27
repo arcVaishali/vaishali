@@ -1,9 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { React, useState } from "react";
 import { exp } from "../../constants/index";
 import { animated, useSpring } from "@react-spring/web";
 
 const Experience = () => {
+  const [content, setContent] = useState("");
+  const [click, setClick] = useState(false);
   const styles = useSpring({
     from: { x: -50, opacity: 0 },
     to: { x: 0, opacity: 1 },
@@ -16,11 +17,16 @@ const Experience = () => {
     from: { opacity: 0 },
     to: { opacity: 1 },
   });
-  const AnimatedComponent = animated(Link);
+  function clickHandler(index) {
+    // setClick(true);
+    // exp.forEach((element, i) => {
+    //   if (i == index) {
+    //     setContent(element.description);
+    //   }
+    // });
+  }
   return (
-    <animated.div
-      className="grid grid-cols-12 col-span-12 p-16 lg:py-32 lg:px-16 justify-center items-center bg-black text-white my-32 lg:my-64"
-    >
+    <animated.div className="grid grid-cols-12 col-span-12 p-16 lg:py-32 lg:px-16 justify-center items-center bg-black text-white my-32 lg:my-64">
       <span
         data-aos="zoom-in"
         style={{ ...styles }}
@@ -30,10 +36,10 @@ const Experience = () => {
       </span>
       <div className="grid lg:grid-cols-12 col-span-12 lg:m-16">
         {exp.map((element, index) => (
-          <Link
+          <div
+            onClick={() => clickHandler(index)}
             data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
             style={{ ...style2 }}
-            to="/"
             className="grid lg:grid-cols-12 col-span-12 justify-between items-center border-t-[1px] border-gray-700 p-[20px] transition hover:scale-90 delay-150 duration-1000 cursor-pointer"
           >
             <animated.span
@@ -55,7 +61,17 @@ const Experience = () => {
             >
               {element.tenure}
             </animated.div>
-          </Link>
+            <div
+              className={
+                click === true
+                  ? " hidden " +
+                    "col-span-12 justify-between text-xs items-center my-4 cursor-pointer"
+                  : "col-span-12 justify-between text-xs items-center my-4 cursor-pointer"
+              }
+            >
+              {content}
+            </div>
+          </div>
         ))}
       </div>
     </animated.div>

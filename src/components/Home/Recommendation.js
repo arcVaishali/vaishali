@@ -18,7 +18,7 @@ const Recommendation = () => {
       <span className="col-span-12 text-center lg:text-left text-4xl lg:text-7xl lg:p-16 font-black uppercase mb-16 lg:ml-[200px]">
         Testimonials
       </span>
-      <div className="grid grid-cols-12 col-span-12 justify-center items-center ml-8 lg:ml-32">
+      <div className="grid grid-cols-12 col-span-12 justify-center items-center ml-4 lg:ml-32">
         <div data-aos="fade-up-left" className="lg:col-span-4 col-span-12">
           <img src={dummyImage} className="w-fill h-fill" />
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ongoingProjectCard } from "../../constants/index";
 import { animated, useSpring } from "@react-spring/web";
 
@@ -12,18 +13,21 @@ const Latest = () => {
     to: { y: 0 },
   });
 
+const AnimatedLink = animated(Link)
   return (
     <div className="grid grid-cols-12 justify-center items-center px-16">
       <animated.span
         data-aos="fade-in"
         style={{ ...styleX }}
-        className="text-4xl text-center col-span-12 lg:col-start-1 lg:ml-16 lg:text-7xl uppercase font-black p-16 lg:m-8 "
+        className="text-4xl text-center -ml-8 col-span-12 lg:col-start-1 lg:ml-16 lg:text-7xl uppercase font-black p-16 lg:m-8 "
       >
         Latest Projects
       </animated.span>
       <div className="grid lg:grid-cols-12 col-span-12 lg:col-start-5 gap-4 lg:gap-32 justify-center items-center">
         {ongoingProjectCard.map((element, index) => (
-          <div
+          <AnimatedLink
+          to = {element.to}
+          target="_blank"
             data-aos="zoom-in"
             style={{ ...styleY }}
             className="flex flex-col col-span-3"
@@ -39,7 +43,7 @@ const Latest = () => {
               {element.name}
             </span>
             {/* </div> */}
-          </div>
+          </AnimatedLink>
         ))}
       </div>
     </div>

@@ -30,7 +30,7 @@ const Services = () => {
         <div
           data-aos="fade-in"
           data-aos-easing="ease-in-out"
-          className="col-span-12 ml-4 lg:col-start-8 lg:ml-0 lg:col-span-4"
+          className="col-span-12  lg:col-start-8 lg:ml-0 lg:col-span-4"
         >
           <img
             src="https://assets.website-files.com/643d8b145b9de160a97cf566/64719a153090a633cf8ae8a3_Rectangle%2041158%20(1).png"

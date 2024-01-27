@@ -67,7 +67,7 @@ const Hero = () => {
                 </animated.div>
               </div>
             ) : (
-              <img className="lg:inline" data-aos="zoom-in-up" src={aboutSectionImage3} />
+              <img className="hidden lg:inline" data-aos="zoom-in-up" src={aboutSectionImage3} />
             )}
           </div>
         ))}
