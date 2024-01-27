@@ -7,7 +7,7 @@ import { iconList } from "./CodingProfiles";
 
 const Header = () => {
   return (
-    <div className="col-span-12 grid lg:grid-cols-12 mb-4 justify-center items-center">
+    <div className="col-span-12 grid lg:grid-cols-12 mb-2 lg:mb-4 justify-center items-center">
       <div className="grid lg:grid-cols-10 col-span-10 col-start-2 justify-between items-center m-8">
         <span className="col-span-4 col-start-4 lg:col-start-1 leading-7 m-4">
           <img
