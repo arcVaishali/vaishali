@@ -38,20 +38,20 @@ const Experience = () => {
           >
             <animated.span
               style={{ ...styleOnContent }}
-              className="uppercase col-span-12 text-center lg:col-span-6 font-semibold text-sm lg:text-xl"
+              className="uppercase col-span-12 text-center lg:text-left lg:col-span-6 font-semibold text-sm lg:text-xl"
             >
               {element.name}
             </animated.span>
 
             <animated.div
               style={{ ...styleOnContent }}
-              className="uppercase col-span-12 text-center lg:col-span-4 font-semibold text-xs lg:text-sm"
+              className="uppercase col-span-12 text-center lg:text-left lg:col-span-4 font-semibold text-xs lg:text-sm"
             >
               {element.post}
             </animated.div>
             <animated.div
               style={{ ...styleOnContent }}
-              className="uppercase col-span-12 text-center lg:col-span-2 font-semibold text-xs lg:text-sm"
+              className="uppercase col-span-12 text-center lg:text-left lg:col-span-2 font-semibold text-xs lg:text-sm"
             >
               {element.tenure}
             </animated.div>

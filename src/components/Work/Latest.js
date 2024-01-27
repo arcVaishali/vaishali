@@ -17,7 +17,7 @@ const Latest = () => {
       <animated.span
         data-aos="fade-in"
         style={{ ...styleX }}
-        className="text-4xl text-center col-span-12 lg:col-start-2 lg:ml-16 lg:text-7xl uppercase font-black p-16 lg:m-8 "
+        className="text-4xl text-center col-span-12 lg:col-start-1 lg:ml-16 lg:text-7xl uppercase font-black p-16 lg:m-8 "
       >
         Latest Projects
       </animated.span>
