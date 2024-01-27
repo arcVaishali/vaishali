@@ -10,7 +10,7 @@ const Services = () => {
       <span
         data-aos="fade-in"
         data-aos-easing="ease-in-out"
-        className="col-span-12 text-4xl ml-16 lg:text-7xl font-black uppercase mb-4 lg:mb-16"
+        className="col-span-12 text-4xl text-center lg:text-7xl font-black uppercase mb-4 lg:mb-16"
       >
         Services
       </span>
