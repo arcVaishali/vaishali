@@ -48,38 +48,54 @@ export const exp = [
 
 export const card1 = [
   {
-    title: "MediHacks 2023 Winner",
-    tag: "sss",
+    id: 1,
+    src:"https://devpost.com/software/embrace-autism",
+    title: "Hackathon Winner",
+    tag: "see..",
   },
   {
-    title: "Impact Hacks Winner",
-    tag: "sss",
+    id:2,
+    src:"https://devpost.com/software/collaborative-study-groups-app-empower-hack",
+    title: "Honorable Mention",
+    tag: "see..",
   },
   {
-    title: "Empower Hacks",
-    tag: "sss",
+    id:3,
+    src:"https://devpost.com/software/relief-connect",
+    title: "Runner up",
+    tag: "See..",
   },
   {
-    title: "370+ problems on Leetcode",
-    tag: "sss",
+    id:4 ,
+    src:"https://www.leetcode.com/vaishali_p14",
+    title: "370+ problems solved",
+    tag: "LC",
   },
 ];
 export const card2 = [
   {
-    title: "1st rank holder in UT",
-    tag: "sss",
+    id:5 ,
+    src:"https://devpost.com/software/lovers-oi84b5",
+    title: "Second Runner up",
+    tag: "see..",
   },
   {
-    title: "MLH DataHackfest Winner",
-    tag: "sss",
+    id : 6 ,
+    src:"https://www.codechef.com/users/vaishali_p14",
+    title: "250+ problems solved",
+    tag: "CC",
   },
   {
-    title: "MLH Web3Apps Hackathon Winner",
-    tag: "sss",
+    id:7 ,
+    src:"",
+    title: "100+ Problems Solved",
+    tag: "GFG",
   },
   {
-    title: "250+ problems on Codechef",
-    tag: "sss",
+    id:8 ,
+    src:"https://www.github.com/arcVaishali?tab=repositories",
+    title: "10+ Mini projects",
+    tag: "Web",
   },
 ];
 
