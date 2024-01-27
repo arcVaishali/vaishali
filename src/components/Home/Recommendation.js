@@ -4,11 +4,11 @@ import { dummyImage2 } from "../../constants/imageList";
 
 const Recommendation = () => {
   return (
-    <div className="grid lg:grid-cols-12 ml-16 mr-16 mb-16 mt-32 lg:mt-16">
-      <span className="col-span-12 text-4xl lg:text-7xl lg:p-16 font-black uppercase mb-16 ml-[50px] lg:ml-[200px]">
+    <div className="grid grid-cols-12 mb-16 mt-32 p-4 lg:mt-16">
+      <span className="col-span-12 text-4xl lg:text-7xl lg:p-16 font-black uppercase mb-16 lg:ml-[200px]">
         Testimonials
       </span>
-      <div className="grid lg:grid-cols-12 col-span-12 justify-center items-center ml-[50px] lg:ml-32">
+      <div className="grid lg:grid-cols-12 col-span-12 justify-center items-center lg:ml-32">
         <div
           data-aos="fade-up-left"
           className="lg:col-span-4 col-span-6"

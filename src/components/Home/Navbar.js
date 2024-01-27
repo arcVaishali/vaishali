@@ -19,18 +19,18 @@ const Navbar = () => {
   return (
     <div>
       {showMenu === false ? (
-        <div className="grid grid-cols-12 w-screen gap-16 justify-between items-center p-4 bg-[#f0f0f0]">
+        <div className="grid grid-cols-12 gap-4 lg:gap-16 justify-between items-center p-4 bg-[#f0f0f0]">
           <animated.div
             style={{ ...spring }}
-            className="grid grid-cols-5 col-span-6"
+            className="grid grid-cols-5 col-span-10 lg:col-span-6"
           >
-            <Link className="w-[150px] mt-4 ml-8 lg:ml-16" to="/">
+            <Link className="w-[150px] mt-4 lg:ml-16" to="/">
               <img src={Logo} />
             </Link>
           </animated.div>
           <animated.div
             style={{ ...spring }}
-            className="min-[200px]:hidden max-[900px]:hidden lg:flex lg:col-span-6 lg:gap-8 xl:ml-64"
+            className="hidden lg:flex lg:col-span-6 lg:gap-8 xl:ml-64"
           >
             {navLink.map((element) => (
               <Link
@@ -48,7 +48,7 @@ const Navbar = () => {
           </animated.div>
           <animated.div
             style={{ ...spring }}
-            className="flex col-span-1 justify-end ml-[100px] col-start-7 lg:hidden"
+            className="flex col-span-2 lg:hidden"
           >
             <FontAwesomeIcon
               className="text-4xl cursor-pointer"

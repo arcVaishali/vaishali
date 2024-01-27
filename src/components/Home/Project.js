@@ -6,11 +6,11 @@ const Project = () => {
   function handle() {}
   return (
     <div className="grid grid-cols-12 col-span-12 justify-center items-center m-32 gap-8">
-      <span className="col-start-8 lg:col-start-2 lg:ml-16 lg:col-end-12 text-4xl lg:text-6xl font-black uppercase mb-8">
+      <span className="lg:col-start-2 lg:ml-16 lg:col-end-12 text-4xl lg:text-6xl font-black uppercase mb-8">
         <span className="hidden lg:inline">Featured</span> Projects
       </span>
 
-      <div className="grid lg:grid lg:grid-cols-12 col-span-12 gap-8 justify-between col-start-6 lg:col-start-1">
+      <div className="grid lg:grid lg:grid-cols-12 col-span-12 gap-8 justify-between lg:col-start-1">
         {projectList.map((element, index) => (
           <Link
             data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}

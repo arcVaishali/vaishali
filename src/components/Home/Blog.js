@@ -3,7 +3,7 @@ import List from "../Blog/List";
 
 const Blog = () => {
   return (
-    <div className="relative left-16 lg:left-0 grid grid-cols-12 justify-center items-center p-4 lg:p-32">
+    <div className="grid grid-cols-12 justify-center items-center p-4 lg:p-32">
       <div className="grid grid-cols-12 col-span-12 justify-between items-center mb-16">
         <span
           data-aos="fade-in"
