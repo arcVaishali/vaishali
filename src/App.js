@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import { React, useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import AnimatedCursor from "react-animated-cursor";
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     AOS.init({
       offset: 200,
@@ -24,6 +25,17 @@ function App() {
       anchorPlacement: "top-center",
     });
     AOS.refresh();
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initialize the state on component mount
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   /*
@@ -31,38 +43,40 @@ function App() {
 
   return (
     <BrowserRouter>
-      <AnimatedCursor
-        // color="0, 0, 0"
-        innerSize={30}
-        outerSize={0}
-        innerScale={1}
-        outerScale={1.7}
-        outerAlpha={0}
-        hasBlendMode={false}
-        innerStyle={{
-          backgroundColor: "#f0f0f0",
-          mixBlendMode: "exclusion",
-        }}
-        outerStyle={{
-          backgroundColor: "rgb( 255 , 255 , 255)",
-          mixBlendMode: "exclusion",
-        }}
-        trailingSpeed={10} // ⁡⁣⁣⁢Default value⁡
-        // ⁡⁣⁣⁢to make speed of outer cursor == inner cursor, set to 1⁡
-        clickables={[
-          "a",
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          "label[for]",
-          "select",
-          "textarea",
-          "button",
-          ".link",
-        ]}
-      />
+      {!isMobile && (
+        <AnimatedCursor
+          // color="0, 0, 0"
+          innerSize={30}
+          outerSize={0}
+          innerScale={1}
+          outerScale={1.7}
+          outerAlpha={0}
+          hasBlendMode={false}
+          innerStyle={{
+            backgroundColor: "#f0f0f0",
+            mixBlendMode: "exclusion",
+          }}
+          outerStyle={{
+            backgroundColor: "rgb( 255 , 255 , 255)",
+            mixBlendMode: "exclusion",
+          }}
+          trailingSpeed={10} // ⁡⁣⁣⁢Default value⁡
+          // ⁡⁣⁣⁢to make speed of outer cursor == inner cursor, set to 1⁡
+          clickables={[
+            "a",
+            'input[type="text"]',
+            'input[type="email"]',
+            'input[type="number"]',
+            'input[type="submit"]',
+            'input[type="image"]',
+            "label[for]",
+            "select",
+            "textarea",
+            "button",
+            ".link",
+          ]}
+        />
+      )}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
