@@ -29,7 +29,7 @@ const Hero = () => {
     <div className="grid grid-cols-12 col-span-12 justify-center items-center">
       <animated.span
         style={{ ...spring }}
-        className="flex flex-col col-span-12 col-start-2 col-end-12 text-center font-black text-7xl mt-32"
+        className="grid grid-rows-1 col-span-12 col-start-3 col-end-11 lg:col-start-2 lg:col-end-12 text-center font-black text-7xl mt-32 lg:ml-0"
       >
         <span className="text-center font-thin text-xl lg:text-5xl m-2">
           Hey! I am Vaishali
@@ -37,7 +37,7 @@ const Hero = () => {
         <H
           text="Web Developer Based in Delhi"
           level="1"
-          classN=" text-center text-4xl lg:text-8xl "
+          classN=" text-4xl lg:text-8xl "
         />
       </animated.span>
 
@@ -51,36 +51,29 @@ const Hero = () => {
         <Link
           target="_blank"
           to="https://topmate.io/vaishali_p14"
-          className="text-sm bg-black text-white border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 lg:my-8 lg:mx-2 my-2"
+          className="text-sm bg-black text-white border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 lg:my-8 lg:mx-2 my-2 text-center"
         >
           Book a free call
         </Link>
         <Link
           target="_blank"
           to="https://drive.google.com/file/d/16acvxeGGuvW6n63jfJ4Edu7u8EXkKLx2/view?usp=sharing"
-          className="text-sm bg-transparent text-black border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 lg:my-8 my-2"
+          className="text-sm bg-transparent text-black border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 lg:my-8 my-2 text-center"
         >
           View Resume
         </Link>
       </div>
-      {initial ? (
-        <div className="mt-64 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700 p-4">
-          {names.map((element, index) => (
-            <span className="px-8 font-black">Linkedin</span>
-          ))}
-        </div>
-      ) : (
-        <Marquee className="mt-64 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700 py-4">
-          {names.map((element, index) => (
-            <span
-              className="px-8 font-light uppercase"
-              style={{ fontFamily: "serif" }}
-            >
-              Linkedin
-            </span>
-          ))}
-        </Marquee>
-      )}
+
+      <Marquee className="mt-64 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700 py-4 lg:ml-0">
+        {names.map((element, index) => (
+          <span
+            className="px-8 font-light uppercase"
+            style={{ fontFamily: "serif" }}
+          >
+            vadore
+          </span>
+        ))}
+      </Marquee>
     </div>
   );
 };
