@@ -26,7 +26,7 @@ const Experience = () => {
         style={{ ...styles }}
         className="col-span-8 lg:col-start-3 font-black uppercase text-4xl lg:text-7xl text-center"
       >
-        <span className="hidden lg:inline">Job</span>Experience
+        <span className="hidden lg:inline">Job </span>Experience
       </span>
       <div className="grid lg:grid-cols-12 col-span-12 lg:m-16">
         {exp.map((element, index) => (

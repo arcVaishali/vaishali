@@ -30,7 +30,7 @@ const Hero = () => {
           style={{ ...styleOnHeader }}
           className="text-4xl text-center lg:col-span-6 uppercase font-black p-2 lg:text-7xl"
         >
-          i focus on design development problem solving
+          <span className="hidden lg:inline">i focus on </span>design development and problem solving
         </animated.span>
         <animated.div
           style={{ ...styleOnSubHeader }}
@@ -40,7 +40,7 @@ const Hero = () => {
           domination. At the end of the day, going forward, a new.
         </animated.div>
       </div>
-      <div className="lg:col-start-1 col-span-12 grid grid-cols-12 justify-center items-center p-8 gap-8">
+      <div className="lg:col-start-1 col-span-12 grid grid-cols-12 justify-center items-center p-8 gap-2 lg:gap-8">
         {imgg.map((element, index) => (
           <div className="col-span-3">
             {index === 1 ? (
@@ -67,7 +67,7 @@ const Hero = () => {
                 </animated.div>
               </div>
             ) : (
-              <img className="hidden lg:inline" data-aos="zoom-in-up" src={aboutSectionImage3} />
+              <img className="lg:inline" data-aos="zoom-in-up" src={aboutSectionImage3} />
             )}
           </div>
         ))}
