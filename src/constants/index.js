@@ -14,14 +14,17 @@ export const exp = [
   {
     name: "Frontend Developer",
     post: "Cats In Tech",
+    tenure:"Oct 2023 - Present"
   },
   {
     name: "Web Developer",
     post: "Code Clause",
+    tenure:"May 2023 - June-2023"
   },
   {
     name: "Open Source Contributor",
     post: "GSosC'23",
+    tenure:"May 2023 - Aug 2023"
   },
   // {
   //   name: "Developer",

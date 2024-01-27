@@ -17,11 +17,11 @@ const Latest = () => {
       <animated.span
         data-aos="fade-in"
         style={{ ...styleX }}
-        className="text-4xl col-span-12 -ml-4 lg:col-start-2 lg:ml-16 lg:text-7xl uppercase font-black p-16 m-8"
+        className="text-4xl text-center col-span-12 lg:col-start-1 lg:ml-16 lg:text-7xl uppercase font-black p-16 lg:m-8 "
       >
         Latest Projects
       </animated.span>
-      <div className="grid lg:grid-cols-12 col-span-12 col-start-5 gap-32 justify-center items-center">
+      <div className="grid lg:grid-cols-12 col-span-12 lg:col-start-5 gap-4 lg:gap-32 justify-center items-center">
         {ongoingProjectCard.map((element, index) => (
           <div
             data-aos="zoom-in"

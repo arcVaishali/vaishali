@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
-import { card1 , card2 } from "../../constants/index";
+import { card1, card2 } from "../../constants/index";
 import { animated, useSpring } from "@react-spring/web";
 
 const Achievement = () => {
@@ -36,12 +36,12 @@ const Achievement = () => {
           Get in Touch
         </animated.button>
       </div>
-      <div className="grid lg:grid-col-12 col-span-12 p-4 mt-8">
+      <div className="grid lg:grid-col-12 col-span-12 justify-center items-center p-4 mt-8">
         {cols.map((ele, idx) => (
           <div
             data-aos={idx % 2 == 0 ? "fade-right" : "fade-left"}
             data-aos-easing="ease-in-out"
-            className="grid lg:grid-cols-12 col-span-6 gap-8"
+            className="grid lg:grid-cols-12 justify-center items-center col-span-6 gap-8"
           >
             {idx === 1
               ? card1.map((element, index) => (
@@ -49,15 +49,17 @@ const Achievement = () => {
                     style={{ ...style3 }}
                     data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
                     data-aos-easing="ease-in-out"
-                    className="flex col-span-6 justify-between items-center border-t-[1px] border-black p-4"
+                    className="grid grid-cols-12 gap-2 lg:col-span-6 col-span-12 justify-between items-center border-t-[1px] border-black p-4"
                   >
-                    <span className="uppercase">{element.title}</span>
-                    <button className="border-[1px] border-black rounded-full p-2">
+                    <span className="uppercase col-span-6">
+                      {element.title}
+                    </span>
+                    <div className="col-span-4 w-fit text-center cursor-pointer border-[1px] border-black rounded-full p-2">
                       {element.tag}
-                    </button>
+                    </div>
                     <FontAwesomeIcon
                       icon={faArrowAltCircleRight}
-                      className="cursor-pointer"
+                      className="cursor-pointer col-span-2"
                       size="xl"
                       swapOpacity
                       transform={{ rotate: 315 }}
@@ -69,15 +71,17 @@ const Achievement = () => {
                     style={{ ...style3 }}
                     data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
                     data-aos-easing="ease-in-out"
-                    className="lg:flex col-span-6 justify-between items-center border-t-[1px] border-black p-4 hidden"
+                    className="hidden lg:grid grid-cols-12 gap-2 lg:col-span-6 col-span-12 justify-between items-center border-t-[1px] border-black p-4"
                   >
-                    <span className="uppercase">{element.title}</span>
-                    <button className="border-[1px] border-black rounded-full p-2">
+                    <span className="uppercase col-span-6">
+                      {element.title}
+                    </span>
+                    <div className="col-span-4 w-fit text-center cursor-pointer border-[1px] border-black rounded-full p-2">
                       {element.tag}
-                    </button>
+                    </div>
                     <FontAwesomeIcon
                       icon={faArrowAltCircleRight}
-                      className="cursor-pointer"
+                      className="cursor-pointer col-span-2"
                       size="xl"
                       swapOpacity
                       transform={{ rotate: 315 }}
