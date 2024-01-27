@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { animated, useSpring } from "@react-spring/web";
 import Marquee from "react-fast-marquee";
 import H from "../H";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const names = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 0];
@@ -42,15 +43,26 @@ const Hero = () => {
 
       <animated.span
         style={{ ...spring2 }}
-        className="hidden lg:flex col-span-8 col-start-4 col-end-10 text-center text-sm m-2"
+        className="hidden lg:flex col-span-8 col-start-5 col-end-10 text-center text-sm m-2"
       >
-        Quis culpa culpa Lorem velit dolore.Esse elit irure minim ad est
-        incididunt commodo eu nulla tempor labore dolor.
+        I believe in collaborative excellence, striving resilience.
       </animated.span>
-
-      <button className="w-[150px] text-sm col-start-5 my-8 ml-2 lg:col-start-6 bg-black text-white border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 lg:my-8 lg:mx-8">
-        Book a free call
-      </button>
+      <div className="col-start-4 grid col-span-5 lg:inline lg:col-span-12 my-8 ml-4 lg:col-start-5 lg:ml-8">
+        <Link
+          target="_blank"
+          to="https://topmate.io/vaishali_p14"
+          className="text-sm bg-black text-white border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 lg:my-8 lg:mx-2 my-2"
+        >
+          Book a free call
+        </Link>
+        <Link
+          target="_blank"
+          to="https://drive.google.com/file/d/16acvxeGGuvW6n63jfJ4Edu7u8EXkKLx2/view?usp=sharing"
+          className="text-sm bg-transparent text-black border-2 border-black hover:bg-white hover:text-black rounded-full px-4 py-2 lg:my-8 my-2"
+        >
+          View Resume
+        </Link>
+      </div>
       {initial ? (
         <div className="mt-64 grid grid-cols-12 col-span-12 border-t-[1px] border-b-[1px] border-gray-700 p-4">
           {names.map((element, index) => (

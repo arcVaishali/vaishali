@@ -19,14 +19,14 @@ const Experience = () => {
   const AnimatedComponent = animated(Link);
   return (
     <animated.div
-      className="grid grid-cols-12 col-span-12 p-16 lg:py-32 lg:px-16 justify-center items-center bg-black text-white my-64"
+      className="grid grid-cols-12 col-span-12 p-16 lg:py-32 lg:px-16 justify-center items-center bg-black text-white my-32 lg:my-64"
     >
       <span
         data-aos="zoom-in"
         style={{ ...styles }}
         className="col-span-8 lg:col-start-3 font-black uppercase text-4xl lg:text-7xl text-center"
       >
-        Job Experience
+        <span className="hidden lg:inline">Job</span>Experience
       </span>
       <div className="grid lg:grid-cols-12 col-span-12 lg:m-16">
         {exp.map((element, index) => (
@@ -38,7 +38,7 @@ const Experience = () => {
           >
             <animated.span
               style={{ ...styleOnContent }}
-              className="uppercase font-semibold text-lg lg:text-xl"
+              className="uppercase font-semibold text-sm lg:text-xl"
             >
               {element.name}
             </animated.span>

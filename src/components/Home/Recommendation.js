@@ -22,10 +22,8 @@ const Recommendation = () => {
           data-aos="fade-in"
           className="col-span-6 text-sm font-extralight mt-8 lg:mt-0 lg:ml-16"
         >
-          Voluptate do aliqua aliqua duis esse nisi.Enim incididunt id sunt sit
-          nisi incididunt sint mollit veniam eiusmod.Sit qui duis occaecat minim
-          dolor.
-          <img src={dummyImage2} />
+          Vaishali is a highly skilled and dedicated professional whom I've had the pleasure of collaborating with on various projects. Their exceptional abilities and commitment to excellence make them a standout talent in the industry.
+          {/* <img src={dummyImage2} /> */}
         </div>
       </div>
     </div>

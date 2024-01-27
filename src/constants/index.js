@@ -17,37 +17,55 @@ export const exp = [
   },
   {
     name: "Web Developer",
-    post: "Vaishali.com",
+    post: "Code Clause",
   },
   {
-    name: "Designer",
-    post: "Design.OG",
+    name: "Open Source Contributor",
+    post: "GSosC'23",
   },
-  {
-    name: "Developer",
-    post: "Alice in Wonderland",
-  },
-  {
-    name: "Sr. Developer",
-    post: "Fla Fla Fla",
-  },
+  // {
+  //   name: "Developer",
+  //   post: "Alice in Wonderland",
+  // },
+  // {
+  //   name: "Sr. Developer",
+  //   post: "Fla Fla Fla",
+  // },
 ];
 
-export const card = [
+export const card1 = [
   {
-    title: "Name of Award",
+    title: "MediHacks 2023 Winner",
     tag: "sss",
   },
   {
-    title: "Name of Award",
+    title: "Impact Hacks Winner",
     tag: "sss",
   },
   {
-    title: "Name of Award",
+    title: "Empower Hacks",
     tag: "sss",
   },
   {
-    title: "Name of Award",
+    title: "370+ problems on Leetcode",
+    tag: "sss",
+  },
+];
+export const card2 = [
+  {
+    title: "1st rank holder in UT",
+    tag: "sss",
+  },
+  {
+    title: "MLH DataHackfest Winner",
+    tag: "sss",
+  },
+  {
+    title: "MLH Web3Apps Hackathon Winner",
+    tag: "sss",
+  },
+  {
+    title: "250+ problems on Codechef",
     tag: "sss",
   },
 ];
