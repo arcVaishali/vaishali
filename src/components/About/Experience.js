@@ -24,7 +24,7 @@ const Experience = () => {
       <span
         data-aos="zoom-in"
         style={{ ...styles }}
-        className="col-span-8 lg:col-start-3 font-black uppercase text-4xl lg:text-7xl text-center"
+        className="col-span-8 col-start-3 lg:col-start-3 font-black uppercase text-4xl lg:text-7xl text-center"
       >
         <span className="hidden lg:inline">Job</span>Experience
       </span>
@@ -34,20 +34,26 @@ const Experience = () => {
             data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
             style={{ ...style2 }}
             to="/"
-            className="flex-rows justify-center lg:flex col-span-12 lg:justify-between items-center border-t-[1px] border-gray-700 p-[20px] transition hover:scale-90 delay-150 duration-1000 cursor-pointer"
+            className="grid lg:grid-cols-12 col-span-12 justify-between items-center border-t-[1px] border-gray-700 p-[20px] transition hover:scale-90 delay-150 duration-1000 cursor-pointer"
           >
             <animated.span
               style={{ ...styleOnContent }}
-              className="uppercase font-semibold text-sm lg:text-xl"
+              className="uppercase col-span-12 text-center lg:col-span-6 font-semibold text-sm lg:text-xl"
             >
               {element.name}
             </animated.span>
 
             <animated.div
               style={{ ...styleOnContent }}
-              className="uppercase font-semibold text-xs lg:text-sm"
+              className="uppercase col-span-12 text-center lg:col-span-4 font-semibold text-xs lg:text-sm"
             >
               {element.post}
+            </animated.div>
+            <animated.div
+              style={{ ...styleOnContent }}
+              className="uppercase col-span-12 text-center lg:col-span-2 font-semibold text-xs lg:text-sm"
+            >
+              {element.tenure}
             </animated.div>
           </Link>
         ))}

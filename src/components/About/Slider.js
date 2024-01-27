@@ -16,7 +16,7 @@ const Slider = () => {
     to: { opacity: 1 },
   });
   return (
-    <div className="grid grid-cols-12 col-span-12 justify-center items-center p-8 lg:px-16 lg:py-8 my-16 lg:my-32">
+    <div className="grid grid-cols-12 col-span-12 justify-center items-center p-8 lg:px-16 lg:py-8 my-8 lg:my-32">
       <span
         data-aos="zoom-in"
         style={{ ...style1 }}
