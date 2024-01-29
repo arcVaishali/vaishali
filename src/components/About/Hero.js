@@ -6,7 +6,10 @@ import {
   aboutSectionImage2,
   aboutSectionImage3,
 } from "../../constants/imageList";
-
+import development from "../../assets/development.jpg";
+import dsa from "../../assets/dsa.jpg";
+import cp from "../../assets/competitiveProgramming.jpg";
+import design from "../../assets/design.jpg";
 const Hero = () => {
   const names = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 0];
   const imgg = [1, { one: "", two: "" }, 3, 4];
@@ -51,8 +54,8 @@ const Hero = () => {
                 >
                   <img
                     data-aos="slide-up"
-                    src={aboutSectionImage1}
-                    className="w-32 h-fill"
+                    src={development}
+                    className="w-64 h-fill"
                   />
                 </animated.div>
                 <animated.div
@@ -61,13 +64,13 @@ const Hero = () => {
                 >
                   <img
                     data-aos="slide-up"
-                    src={aboutSectionImage2}
-                    className="w-32 h-fill"
+                    src={cp}
+                    className="w-64 h-fill"
                   />
                 </animated.div>
               </div>
             ) : (
-              <img className="hidden lg:inline" data-aos="zoom-in-up" src={aboutSectionImage3} />
+              <img className="hidden lg:inline" data-aos="zoom-in-up" src={design} />
             )}
           </div>
         ))}

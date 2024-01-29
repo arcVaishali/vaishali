@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { dummyImage } from "../../constants/imageList";
+import  dummyImage  from "../../assets/recommendationsImage.jpg";
 import { dummyImage2 } from "../../constants/imageList";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
