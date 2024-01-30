@@ -29,7 +29,7 @@ const Hero = () => {
     <div className="grid grid-cols-12 col-span-12 justify-center items-center">
       <animated.span
         style={{ ...spring }}
-        className="grid grid-rows-1 col-span-12 col-start-3 col-end-11 lg:col-start-2 lg:col-end-12 text-center font-black text-7xl mt-32 lg:ml-0"
+        className="grid grid-rows-1 col-span-12 col-start-2 col-end-12 lg:col-start-2 lg:col-end-12 text-center font-black text-7xl mt-32 lg:ml-0"
       >
         <span className="text-center font-thin text-xl lg:text-5xl m-2">
           Hey! I am Vaishali
@@ -47,7 +47,7 @@ const Hero = () => {
       >
         I believe in collaborative excellence, striving resilience.
       </animated.span>
-      <div className="col-start-4 grid col-span-5 lg:inline lg:col-span-12 my-8 ml-4 lg:col-start-5 lg:ml-8">
+      <div className="col-start-4 grid col-span-6 lg:inline lg:col-span-12 my-8 -ml-2 lg:col-start-5 lg:ml-8">
         <Link
           target="_blank"
           to="https://topmate.io/vaishali_p14"
