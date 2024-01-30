@@ -10,13 +10,36 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
+export const edu = [
+  {
+    name: "B.Tech in Computer Science and Engineering",
+    post: "GL Bajaj Institute of Technology and Management, Greater Noida",
+    tenure: "2021 - 2025",
+    cgpa: "8.99",
+    description: "This is the description of the job1",
+  },
+  {
+    name: "Senior Secondary Education",
+    post: "Kendriya Vidyalaya, Greater Noida",
+    tenure: "2020 - 2021",
+    cgpa: "97.4%",
+    description: "This is the description of the job1",
+  },
+  {
+    name: "Secondary Education",
+    post: "Kendriya Vidyalaya, Greater Noida",
+    tenure: "2018 - 2019",
+    cgpa: "96.6%",
+    description: "This is the description of the job1",
+  },
+];
 export const recommendationList1 = [
   "Arr avast broadside run a shot across the bow belay chase guns grog blossom main sheet wherry. Careen jury mast code of conduct log scuttle six pounders measured fer yer chains. Galleon quarterdeck handsomely yardarm walk the plank bounty scuttle brigantine jib. Pirate maroon hang the jib case shot grog blossom league jury mast knave. Avast bring a spring upon her cable.",
 
   "Officia veniam exercitation exercitation magna aliqua eiusmod consectetur quis.Minim magna deserunt pariatur duis minim reprehenderit.Nostrud non non irure et officia aliqua aute.Ut eu esse labore dolor sit irure nisi.Ad elit occaecat tempor labore pariatur.",
 
   "Bacon ipsum dolor amet drumstick ground round porchetta short ribs venison spare ribs kielbasa sausage pancetta. Ham hock cupim capicola, pork belly kevin beef ribs swine burgdoggen meatball tail. Landjaeger alcatra pork loin porchetta buffalo. Drumstick short loin jowl prosciutto, shoulder landjaeger kevin boudin bacon capicola corned beef sausage.",
-  
+
   "Cupcake ipsum dolor sit amet chocolate bar. Jelly beans chupa chups caramels icing cookie. Tiramisu sweet roll lollipop wafer chocolate bar chocolate cake. Bonbon pastry gummi bears chocolate. Oat cake macaroon carrot cake toffee cake sugar plum. Tootsie roll brownie macaroon donut candy canes jelly beans.",
 ];
 
@@ -52,51 +75,51 @@ export const exp = [
 export const card1 = [
   {
     id: 1,
-    src:"https://devpost.com/software/embrace-autism",
+    src: "https://devpost.com/software/embrace-autism",
     title: "Hackathon Winner",
     tag: "see..",
   },
   {
-    id:2,
-    src:"https://devpost.com/software/collaborative-study-groups-app-empower-hack",
+    id: 2,
+    src: "https://devpost.com/software/collaborative-study-groups-app-empower-hack",
     title: "Honorable Mention",
     tag: "see..",
   },
   {
-    id:3,
-    src:"https://devpost.com/software/relief-connect",
+    id: 3,
+    src: "https://devpost.com/software/relief-connect",
     title: "Runner up",
     tag: "See..",
   },
   {
-    id:4 ,
-    src:"https://www.leetcode.com/vaishali_p14",
+    id: 4,
+    src: "https://www.leetcode.com/vaishali_p14",
     title: "370+ problems solved",
     tag: "LC",
   },
 ];
 export const card2 = [
   {
-    id:5 ,
-    src:"https://devpost.com/software/lovers-oi84b5",
+    id: 5,
+    src: "https://devpost.com/software/lovers-oi84b5",
     title: "Second Runner up",
     tag: "see..",
   },
   {
-    id : 6 ,
-    src:"https://www.codechef.com/users/vaishali_p14",
+    id: 6,
+    src: "https://www.codechef.com/users/vaishali_p14",
     title: "250+ problems solved",
     tag: "CC",
   },
   {
-    id:7 ,
-    src:"",
+    id: 7,
+    src: "",
     title: "100+ Problems Solved",
     tag: "GFG",
   },
   {
-    id:8 ,
-    src:"https://www.github.com/arcVaishali?tab=repositories",
+    id: 8,
+    src: "https://www.github.com/arcVaishali?tab=repositories",
     title: "10+ Mini projects",
     tag: "Web",
   },
@@ -105,23 +128,23 @@ export const card2 = [
 export const SliderCardValues = [
   {
     mini: "S/3",
-    title: "Webflow Website",
-    body: "Aliqua adipisicing dolore aliqua ex ipsum do sit cupidatat esse ipsum.Quis ea in irure veniam ex eiusmod.Magna labore magna consectetur id dolor amet tempor incididunt excepteur laborum.",
+    title: "Frontend Development",
+    body: "I excel at frontend development, leveraging my skills to create engaging and interactive user interfaces. I'm adept at using technologies like HTML, CSS, JavaScript, React and Tailwind CSS to bring designs to life, ensuring optimal user experiences and responsive design.",
   },
   {
     mini: "S/3",
-    title: "Webflow Website",
-    body: "Aliqua adipisicing dolore aliqua ex ipsum do sit cupidatat esse ipsum.Quis ea in irure veniam ex eiusmod.Magna labore magna consectetur id dolor amet tempor incididunt excepteur laborum.",
+    title: "Technical Blog Writing",
+    body: "I have a knack for technical blog writing, where I simplify complex technical concepts into easy-to-understand content. My writing not only imparts knowledge but also encourages readers to explore more about the topic.",
   },
   {
     mini: "S/3",
-    title: "Webflow Website",
-    body: "Aliqua adipisicing dolore aliqua ex ipsum do sit cupidatat esse ipsum.Quis ea in irure veniam ex eiusmod.Magna labore magna consectetur id dolor amet tempor incididunt excepteur laborum.",
+    title: "Wordpress Website",
+    body: "I am skilled in developing WordPress websites, creating custom themes and plugins to meet specific needs. I ensure that the websites I build are user-friendly, responsive, and SEO-optimized. My goal is to provide solutions that help businesses grow and succeed.",
   },
   {
     mini: "S/3",
-    title: "Webflow Website",
-    body: "Aliqua adipisicing dolore aliqua ex ipsum do sit cupidatat esse ipsum.Quis ea in irure veniam ex eiusmod.Magna labore magna consectetur id dolor amet tempor incididunt excepteur laborum.",
+    title: "Teamup for Hackathon",
+    body: "I enjoy participating in hackathons and am always on the lookout for team members with a shared passion for innovation. I believe in the power of collaboration and diverse perspectives to create impactful solutions.",
   },
 ];
 
@@ -172,21 +195,21 @@ export const ongoingProjectCard = [
     image:
       "https://assets.website-files.com/64400efa17592edf6ae1a250/64e6f35a2dd4319151e11b5e_Rectangle%2041170-p-500.png",
     name: "Medi Care",
-    to:"https://devpost.com/software/lovers-oi84b5",
+    to: "https://devpost.com/software/lovers-oi84b5",
   },
   {
     category: "Development",
     image:
       "https://assets.website-files.com/64400efa17592edf6ae1a250/64e6f35a2dd4319151e11b5e_Rectangle%2041170-p-500.png",
     name: "Relief Connect",
-    to:"https://devpost.com/software/relief-connect",  
+    to: "https://devpost.com/software/relief-connect",
   },
   {
     category: "Development",
     image:
       "https://assets.website-files.com/64400efa17592edf6ae1a250/64e6f35a2dd4319151e11b5e_Rectangle%2041170-p-500.png",
     name: "Embrace Autism",
-    to  :"https://devpost.com/software/embrace-autism",
+    to: "https://devpost.com/software/embrace-autism",
   },
 ];
 

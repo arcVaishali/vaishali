@@ -29,6 +29,7 @@ const Footer = () => {
         {socials.map((element, index) => (
           <Link
             to={element.to}
+            target="_blank"
             className="font-thin uppercase mx-2 lg:mx-4 text-[12px] hover:text-gray-300"
           >
             {" "}

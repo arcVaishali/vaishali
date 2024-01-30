@@ -21,6 +21,7 @@ const Profiles = () => {
             //  {key % 2 == 0 ? "zoom-in-right" : "zoom-in-left"}
               className="flex justify-between items-center col-span-12 bg-gray-100 rounded-md p-2 lg:p-8 m-2"
               to={ele.src}
+              target="_blank"
             >
               <img className="h-4 w-4 lg:h-8 lg:w-8" src={ele.icon} />
               <span className="lg:ml-0 text-gray-700 text-xs lg:text-lg font-bold">

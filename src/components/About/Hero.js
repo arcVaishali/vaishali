@@ -39,13 +39,12 @@ const Hero = () => {
           style={{ ...styleOnSubHeader }}
           className="text-center text-sm font-extralight p-2 flex lg:col-span-6 lg:ml-16"
         >
-          Bring to the table win-win survival strategies to ensure proactive
-          domination. At the end of the day, going forward, a new.
+          I provide effective strategies that ensure mutual benefits. As we move forward, we continually innovate and adapt
         </animated.div>
       </div>
       <div className="lg:col-start-1 col-span-12 grid grid-cols-12 justify-center items-center p-4 lg:p-8 gap-4 lg:gap-8">
         {imgg.map((element, index) => (
-          <div className="col-span-12 lg:col-span-3 col-start-2">
+          <div className="col-span-12 lg:col-span-3 col-start-2 -ml-8 lg:ml-0">
             {index === 1 ? (
               <div>
                 <animated.div

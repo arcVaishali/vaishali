@@ -1,5 +1,6 @@
 import React from "react";
 import List from "../Blog/List";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -12,12 +13,13 @@ const Blog = () => {
           Blogs 
           <span className="hidden lg:inline"> and Articles </span>
         </span>
-        <button
+        <Link
+          to="/blog"
           data-aos="fade-in"
-          className="w-[80px] -ml-8 text-sm lg:mt-0 lg:w-[150px] lg:text-xl lg:col-start-11 lg:ml-0 col-span-2 bg-black text-white border-2 border-black hover:bg-white hover:text-black p-[5px] rounded-full lg:p-2"
+          className="w-[80px] text-center -ml-8 text-sm lg:mt-0 lg:w-[150px] lg:text-xl lg:col-start-11 lg:ml-0 col-span-2 bg-black text-white border-2 border-black hover:bg-white hover:text-black p-[5px] rounded-full lg:p-2"
         >
           View all
-        </button>
+        </Link>
       </div>
       <List />
     </div>

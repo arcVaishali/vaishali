@@ -48,14 +48,14 @@ const Slider = () => {
         rtl={false}
         shouldResetAutoplay
         showDots={false}
-        sliderClass="col-span-2 gap-8"
+        sliderClass="col-span-2 gap-4"
         slidesToSlide={2}
         swipeable
       >
         {SliderCardValues.map((element, index) => (
           <div
           data-aos="fade-up"
-            className="flex flex-col bg-white p-4"
+            className="flex flex-col bg-white p-4 h-[400px] lg:h-[350px]"
             style={{ border: "5px double gray", ...styleOnCard }}
           >
             <animated.span

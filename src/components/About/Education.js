@@ -1,8 +1,8 @@
 import { React, useState } from "react";
-import { exp } from "../../constants/index";
+import { edu } from "../../constants/index";
 import { animated, useSpring } from "@react-spring/web";
 
-const Experience = () => {
+const Education = () => {
   const [content, setContent] = useState("");
   const [click, setClick] = useState(false);
   const styles = useSpring({
@@ -26,16 +26,16 @@ const Experience = () => {
     // });
   }
   return (
-    <animated.div className="grid grid-cols-12 col-span-12 p-16 lg:py-32 lg:px-16 justify-center items-center bg-black text-white my-32 lg:my-64">
+    <animated.div className="grid grid-cols-12 col-span-12 p-16 lg:py-32 lg:px-16 justify-center items-center  my-32 lg:my-64">
       <span
         data-aos="zoom-in"
         style={{ ...styles }}
-        className="col-span-8 col-start-2 lg:col-start-3 font-black uppercase text-4xl lg:text-7xl text-center"
+        className="col-span-8 mb-8 col-start-2 lg:col-start-3 font-black uppercase text-4xl lg:text-7xl text-center"
       >
-        <span className="hidden lg:inline">Job </span>Experience
+       Education
       </span>
       <div className="grid lg:grid-cols-12 col-span-12 lg:m-16">
-        {exp.map((element, index) => (
+        {edu.map((element, index) => (
           <div
             onClick={() => clickHandler(index)}
             data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
@@ -51,15 +51,21 @@ const Experience = () => {
 
             <animated.div
               style={{ ...styleOnContent }}
-              className="uppercase col-span-12 text-center lg:text-left lg:col-span-4 font-semibold text-[10px] lg:text-sm"
+              className="uppercase col-span-12 text-center lg:text-left lg:col-span-4 font-semibold text-xs lg:text-sm text-gray-700"
             >
               {element.post}
             </animated.div>
             <animated.div
               style={{ ...styleOnContent }}
-              className="uppercase col-span-12 text-center lg:text-left lg:col-span-2 font-semibold text-[10px] lg:text-sm"
+              className="uppercase col-span-12 text-center lg:text-left lg:col-span-2 font-semibold text-[10px] lg:text-sm text-gray-700"
             >
               {element.tenure}
+            </animated.div>
+            <animated.div
+              style={{ ...styleOnContent }}
+              className="uppercase col-span-12 text-center lg:text-left lg:col-span-2 font-semibold text-[10px] lg:text-sm text-gray-700"
+            >
+              cgpa/percentage: {element.cgpa}
             </animated.div>
             <div
               className={
@@ -78,4 +84,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;

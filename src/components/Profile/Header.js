@@ -26,7 +26,9 @@ const Header = () => {
         </span>
         <div className="hidden lg:flex justify-end items-end col-span-8 mb-2">
           {iconList.map((element, key) => (
-            <Link data-aos="fade-in" to={element.to}>
+            <Link data-aos="fade-in" to={element.to}
+            target="_blank"
+            >
               <FontAwesomeIcon
                 icon={element.icon}
                 color={element.color}
@@ -43,7 +45,7 @@ const Header = () => {
         </div>
         <div className="flex lg:hidden justify-end items-end col-start-3 col-span-8 mb-2">
           {iconList.map((element, key) => (
-            <Link data-aos="fade-in" to={element.to}>
+            <Link data-aos="fade-in" to={element.to} target="_blank">
               <FontAwesomeIcon
                 icon={element.icon}
                 color={element.color}

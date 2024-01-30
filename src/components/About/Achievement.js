@@ -32,12 +32,13 @@ const Achievement = () => {
           <span className="hidden lg:inline">My</span>
           Achievements
         </animated.span>
-        <animated.button
+        <LinkComp
+          to="/contact"
           style={{ ...style1 }}
-          className="hidden lg:inline col-span-2 bg-black p-4 text-white border-2 border-black rounded-full hover:bg-white hover:text-black text-sm"
+          className="hidden text-center lg:inline col-span-2 bg-black p-4 text-white border-2 border-black rounded-full hover:bg-white hover:text-black text-sm"
         >
           Get in Touch
-        </animated.button>
+        </LinkComp>
       </div>
       <div className="grid lg:grid-col-12 col-span-12 justify-center items-center p-4 mt-8">
         {cols.map((ele, idx) => (
