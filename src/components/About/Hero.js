@@ -45,7 +45,7 @@ const Hero = () => {
       </div>
       <div className="lg:col-start-1 col-span-12 grid grid-cols-12 justify-center items-center p-4 lg:p-8 gap-4 lg:gap-8">
         {imgg.map((element, index) => (
-          <div className="col-span-12 lg:col-span-3 col-start-4">
+          <div className="col-span-12 lg:col-span-3 col-start-2">
             {index === 1 ? (
               <div>
                 <animated.div
