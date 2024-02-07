@@ -17,14 +17,7 @@ const Experience = () => {
     from: { opacity: 0 },
     to: { opacity: 1 },
   });
-  function clickHandler(index) {
-    // setClick(true);
-    // exp.forEach((element, i) => {
-    //   if (i == index) {
-    //     setContent(element.description);
-    //   }
-    // });
-  }
+  
   return (
     <animated.div className="grid grid-cols-12 col-span-12 p-16 lg:py-32 lg:px-16 justify-center items-center bg-black text-white my-32 lg:my-64">
       <span
