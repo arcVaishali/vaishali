@@ -30,7 +30,7 @@ const Experience = () => {
       <div className="grid lg:grid-cols-12 col-span-12 lg:m-16">
         {exp.map((element, index) => (
           <div
-            onClick={() => clickHandler(index)}
+            // onClick={() => clickHandler(index)}
             data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
             style={{ ...style2 }}
             className="grid lg:grid-cols-12 col-span-12 justify-between items-center border-t-[1px] border-gray-700 p-[20px] transition hover:scale-90 delay-150 duration-1000 cursor-pointer"

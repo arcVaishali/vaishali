@@ -136,10 +136,15 @@ export const SliderCardValues = [
     title: "Technical Blog Writing",
     body: "I have a knack for technical blog writing, where I simplify complex technical concepts into easy-to-understand content. My writing not only imparts knowledge but also encourages readers to explore more about the topic.",
   },
+  // {
+  //   mini: "S/3",
+  //   title: "Wordpress Website",
+  //   body: "I am skilled in developing WordPress websites, creating custom themes and plugins to meet specific needs. I ensure that the websites I build are user-friendly, responsive, and SEO-optimized. My goal is to provide solutions that help businesses grow and succeed.",
+  // },
   {
     mini: "S/3",
-    title: "Wordpress Website",
-    body: "I am skilled in developing WordPress websites, creating custom themes and plugins to meet specific needs. I ensure that the websites I build are user-friendly, responsive, and SEO-optimized. My goal is to provide solutions that help businesses grow and succeed.",
+    title: "Teamup for Hackathon",
+    body: "I enjoy participating in hackathons and am always on the lookout for team members with a shared passion for innovation. I believe in the power of collaboration and diverse perspectives to create impactful solutions.",
   },
   {
     mini: "S/3",
